@@ -1,3 +1,7 @@
+* {
+  scroll-behavior: smooth;
+}
+
 /* utility class */
 .bg-blue-900 {
   background-color: #22577a;
