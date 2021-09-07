@@ -73,16 +73,19 @@
     </nav>
 
     <div class="container">
-        <h2 class="text-center mt-4">Panduan Administrasi Penduduk</h2>
+        <h4 class="text-center mt-4 ">PANDUAN ADMINISTRASI PENDUDUK</h4>
         <h5 class="text-center mt-4 font-weight-normal">Pilih kategori panduan dibawah ini:</h5>
 
-        <nav class="kategori">
-          <a href="#">Kartu Keluarga</a>
-          <a href="#">E-KTP</a>  
-          <a href="#">Akte</a>  
-          <a href="#">SKCK</a>  
-          <a href="#">Surat Kematian</a>  
-        </nav>
+    <!-- category -->
+       <div class="category d-flex justify-content-center flex-wrap mt-4">
+       <a href="index.php?page=panduan&&kt_panduan=kk"><button type="button" class="btn btn-outline-primary">Kartu Keluarga</button></a>
+       <a href="index.php?page=panduan&&kt_panduan=ektp"><button type="button" class="btn btn-outline-primary">E-KTP</button></a>
+       <a href="index.php?page=panduan&&kt_panduan=akte"><button type="button" class="btn btn-outline-primary">Akte</button></a>
+       <a href="index.php?page=panduan&&kt_panduan=skck"><button type="button" class="btn btn-outline-primary">SKCK</button></a>
+       <a href="#"><button type="button" class="index.php?page=panduan&&kt_panduan=srt_kematian">Surat Kematian</button></a>
+          
+       </div>
+    <hr>
     </div>
 </body>
 </html>

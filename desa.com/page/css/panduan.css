@@ -1,18 +1,18 @@
-/* kategori */
-.kategori{
-    margin-top: 5%;
-    display: flex;
-    justify-content: center;
-}
-.kategori a{
-    border: 2px solid #1e88e5;
-    border-radius: .8rem;
-    padding: 1rem;
-    margin-left: 1.5%;
+.btn-outline-primary:hover{
+    color: white;
+    background-color: #22577a !important;
+    text-decoration: none;
 }
 
-.kategori a:hover{
-    background-color: #1e88e5;
-    color: #ffff;
-    text-decoration: none;
+.btn{
+    margin-left: 10px;
+}
+.a{
+    margin-left: 5%;
+}
+
+@media (max-width: 768px){
+    .btn{
+        margin-top: 10px;
+    }
 }
