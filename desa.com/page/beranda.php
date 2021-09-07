@@ -39,6 +39,9 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/beranda.css">
 
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -101,7 +104,7 @@
 
     <section id="beranda" class="py-5">
         <div class="container">
-            <h2 class="pb-3 text-center">TENTANG</h2>
+            <h4 class="pb-3 text-center">TENTANG</h4>
             <div class="row">
                 <div class="col-md-3 py-3" data-aos="fade-right">
                     <div class="text-center">
@@ -111,6 +114,60 @@
                 <div class="col-md-9 py-3 text-justify" data-aos="fade-left" data-aos-delay="200">
                     <p><strong>Singabangsa</strong> merupakan salah satu Desa di wilayah Kecamatan Tenjo Kabupaten Bogor, dengan luas wilayah 303.262 Ha. Yang terbagi dalam 2 Dusun 4 Rukun Warga ( RW ), 15 Rukun Tetangga ( RT ). Jumlah Penduduk Desa Singabangsa sampai akhir bulan Desember Tahun 2019 tercatat sebanyak 3,998 Jiwa Dengan Jumlah Kartu Keluarga Sebanyak : 2,400 Kepala Keluarga (KK).</p>
                     <p>Dengan kondisi wilayah demikian pemanfaatan lahan sebagai dasar dari tunjuan pembangunan dan pemanfaatan Sumber Daya Alam (SDA) menjadi fokus utama dalam visi dan Misi Kepala Desa Singabangsa. Tidak lain, pemanfaatan tersebut bertujuan untuk kemaslahatan warga setempat yang juga diharapkan dapat mengakat perekonomian masyarakatnya</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="berita" class="bg-light py-5">
+        <div class="container">
+            <div class="col-md-8">
+                <div class="news-container">
+                    <div class="row news-item mb-2">
+                        <div class="row border-bottom">
+                            <div class="col-md-8">
+                                <h5>Optimalkan Sosialisasi Penerapan Ganjil Genap Kawasan Puncak, Bupati Bogor Lakukan Rapat Secara Virtual Dengan Kemenhub RI</h5>
+                                <div class="mb-2 text-blue-900 font-weight-bold">
+                                    <small><i class="fas fa-user"></i> administrator</small> |
+                                    <small><i class="far fa-clock"></i> 25 Agustus 2021</small>
+                                </div>
+                                <p>Menurutnya, tujuan mengundang masyarakat wilayah kawasan Puncak untuk memberikan penjelasan, dan meminta masukan kepada masyarakat yang kemudian akan ia sampaikan ke kementerian sebagai bahan kajian... <a href="#" class="text-decoration-none text-blue-900">Selengkapnya</a></p>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="assets/images/news1.jpeg" class="img-fluid rounded" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row news-item my-3">
+                        <div class="row border-bottom">
+                            <div class="col-md-8">
+                                <h5>Optimalkan Sosialisasi Penerapan Ganjil Genap Kawasan Puncak, Bupati Bogor Lakukan Rapat Secara Virtual Dengan Kemenhub RI</h5>
+                                <div class="mb-2 text-blue-900 font-weight-bold">
+                                    <small><i class="fas fa-user"></i> administrator</small> |
+                                    <small><i class="far fa-clock"></i> 25 Agustus 2021</small>
+                                </div>
+                                <p>Menurutnya, tujuan mengundang masyarakat wilayah kawasan Puncak untuk memberikan penjelasan, dan meminta masukan kepada masyarakat yang kemudian akan ia sampaikan ke kementerian sebagai bahan kajian... <a href="#" class="text-decoration-none text-blue-900">Selengkapnya</a></p>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="assets/images/news1.jpeg" class="img-fluid rounded" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row news-item mb-2">
+                        <div class="row border-bottom">
+                            <div class="col-md-8">
+                                <h5>Optimalkan Sosialisasi Penerapan Ganjil Genap Kawasan Puncak, Bupati Bogor Lakukan Rapat Secara Virtual Dengan Kemenhub RI</h5>
+                                <div class="mb-2 text-blue-900 font-weight-bold">
+                                    <small><i class="fas fa-user"></i> administrator</small> |
+                                    <small><i class="far fa-clock"></i> 25 Agustus 2021</small>
+                                </div>
+                                <p>Menurutnya, tujuan mengundang masyarakat wilayah kawasan Puncak untuk memberikan penjelasan, dan meminta masukan kepada masyarakat yang kemudian akan ia sampaikan ke kementerian sebagai bahan kajian... <a href="#" class="text-decoration-none text-blue-900">Selengkapnya</a></p>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="assets/images/news1.jpeg" class="img-fluid rounded" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

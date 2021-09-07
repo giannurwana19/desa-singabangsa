@@ -2,6 +2,14 @@
   scroll-behavior: smooth;
 }
 
+body {
+  margin-bottom: 3000px;
+}
+
+p {
+  font-size: 14px;
+}
+
 /* utility class */
 .bg-blue-900 {
   background-color: #22577a;
@@ -33,4 +41,8 @@
   color: #22577a !important;
   background-color: #fff;
   border-radius: 5px;
+}
+
+.text-blue-900 {
+  color: #22577a;
 }
