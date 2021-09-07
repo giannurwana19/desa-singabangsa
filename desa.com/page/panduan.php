@@ -83,9 +83,14 @@
        <a href="index.php?page=panduan&&kt_panduan=akte"><button type="button" class="btn btn-outline-primary">Akte</button></a>
        <a href="index.php?page=panduan&&kt_panduan=skck"><button type="button" class="btn btn-outline-primary">SKCK</button></a>
        <a href="index.php?page=panduan&&kt_panduan=srt_kematian"><button type="button" class="btn btn-outline-primary">Surat Kematian</button></a>
-          
        </div>
     <hr>
+
+    <!-- download file panduan -->
+   <section>
+       <img src="./assets/images/panduan/kk.png" alt="panduan" class="img-fluid">
+       <h6 class="text-center font-weight-bolder">Download file panduan: <a href="">disini</a></h6>
+   </section>
     </div>
 </body>
 </html>
