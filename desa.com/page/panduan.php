@@ -74,7 +74,15 @@
 
     <div class="container">
         <h2 class="text-center mt-4">Panduan Administrasi Penduduk</h2>
-        <h5 class="text-center mt-4">Pilih kategori panduan dibawah ini:</h5>
+        <h5 class="text-center mt-4 font-weight-normal">Pilih kategori panduan dibawah ini:</h5>
+
+        <nav class="kategori">
+          <a href="#">Kartu Keluarga</a>
+          <a href="#">E-KTP</a>  
+          <a href="#">Akte</a>  
+          <a href="#">SKCK</a>  
+          <a href="#">Surat Kematian</a>  
+        </nav>
     </div>
 </body>
 </html>
