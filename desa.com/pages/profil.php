@@ -83,7 +83,7 @@ Sedangkan Tanah Kas Desa Seluas 11 Ha, penggunaannya adalah sebagi berikut:<br>
 6. Lapangan Olah raga : 1,9 Ha<br>
 7. Setu : 3,5 Ha<br>
       </div>
-          
+      <div class="fb-page" data-href="https://www.facebook.com/groups/2175245132698936/?_rdc=1&amp;_rdr" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
       
       </div>
       <!-- /.row -->
