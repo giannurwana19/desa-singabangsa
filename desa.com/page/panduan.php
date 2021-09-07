@@ -82,7 +82,7 @@
        <a href="index.php?page=panduan&&kt_panduan=ektp"><button type="button" class="btn btn-outline-primary">E-KTP</button></a>
        <a href="index.php?page=panduan&&kt_panduan=akte"><button type="button" class="btn btn-outline-primary">Akte</button></a>
        <a href="index.php?page=panduan&&kt_panduan=skck"><button type="button" class="btn btn-outline-primary">SKCK</button></a>
-       <a href="#"><button type="button" class="index.php?page=panduan&&kt_panduan=srt_kematian">Surat Kematian</button></a>
+       <a href="index.php?page=panduan&&kt_panduan=srt_kematian"><button type="button" class="btn btn-outline-primary">Surat Kematian</button></a>
           
        </div>
     <hr>
