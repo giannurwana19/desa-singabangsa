@@ -73,7 +73,7 @@
 
     <section id="profil-desa" class="py-5">
         <div class="container pb-3">
-            <h4 class="pb-3 text-center">PROFIL DESA SINGABANGSA</h4>
+            <h4 class="pb-3 text-center" data-aos="fade-top">PROFIL DESA SINGABANGSA</h4>
             <div class="row">
                     <div class="col-lg-5 pb-3" data-aos="fade-up" data-aos-delay="200">
                         <img src="../../images/peta.png" class="float-left mr-3" alt="peta" width="400">
@@ -89,16 +89,16 @@
                         4. Ibu Kota Negara 60 Km<br></p>
 
                         <h5>Batas Wilayah</h5>
-                        1. Sebelah Utara Berbatasan dengan Tangerang<br>
+                        <p>1. Sebelah Utara Berbatasan dengan Tangerang<br>
                         2. Sebelah Timur Berbatasan dengan Desa Cilaku<br>
                         3. Sebelah Selatan Berbatasan dengan Desa Tenjo<br>
                         4. Sebelah Barat Berbatasan dengan Tangerang<br></p>
                     
                         <h5>Penduduk Desa</h5>
                         <p>Jumlah Penduduk Desa Singabangsa sampai akhir bulan Desember Tahun 2017
-                        tercatat sebanyak 3,998 Jiwa Dengan Jumlah Kartu Keluarga Sebanyak : 912 Kepala Keluarga (KK)<br></p>
-                        <p>Untuk melihat Grafik/Chard pertumbuhan penduduk Desa Singabangsa klik
-                        <a href="index.php?page=statistik"><b><u>disini</u></b></a></p><br>
+                        tercatat sebanyak 3,998 Jiwa Dengan Jumlah Kartu Keluarga Sebanyak : 912 Kepala Keluarga (KK)<br>
+                        Untuk melihat Grafik/Chard pertumbuhan penduduk Desa Singabangsa klik
+                        <a href="index.php?page=statistik"><b><u>disini</u></b></a><br></p>
 
                     </div>
             </div>
@@ -109,7 +109,7 @@
                 <h5 class="pt-3 pb-3 text-center" data-aos="fade-top">Keadaan Fisik/Geografi Desa</h5>
                 <div class="row">
                     
-                    <div class="col-md-5 py-3 text-justify" data-aos="fade-left" data-aos-delay="200">
+                    <div class="col-md-5 py-3 text-justify" data-aos="fade-right" data-aos-delay="200">
                         <p>Pemanfaatan Lahan/Penggunaan tanah di Desa Singabangsa sebagai berikut:<br>
                         - Perumahan/Pemukiman dan Pekarangan : 127.674 Ha<br>
                         - Sawah : 83 Ha<br>
@@ -119,7 +119,7 @@
                         - Kantor Desa : 1.000 M 2<br>
                         - Lapangan Olah Raga : 2 Ha<br>
                         - Tanah/Banggunan Pendidikan : 1 Ha<br>
-                        - Tanah / Banguanan Peribadatan : 2 Ha</p>
+                        - Tanah / Banguanan Peribadatan : 2 Ha<br></p>
 
                         <p>Sedangkan Tanah Kas Desa Seluas 11 Ha, penggunaannya adalah sebagi berikut:<br>
                         - Kantor Desa : 1.000 M 2<br>
@@ -131,9 +131,9 @@
                         - Setu : 3,5 Ha</p>
                     </div>
 
-                    <div class="col-md-7 py-3" data-aos="fade-right">
+                    <div class="col-md-7 py-3" data-aos="fade-left">
                         <div class="text-center">
-                            <img src="assets/images/profil/bg2.jpg" class="img-fluid" alt="desa">
+                            <img src="assets/images/profil/bg.jpg" class="img-fluid" alt="desa">
                         </div>
                     </div>
 
@@ -144,14 +144,98 @@
 
     <section id="profil-pemerintah">
         <div class="container pb-3">
-                <h4 class="pb-3 text-center">PROFIL PEMERINTAHAN DESA SINGABANGSA</h4>
-                <div class="row">
-                    <div class="col-lg-12" align="center">
-                        <img class="img-fluid rounded mb-4" src="../../images/logo.png" alt="" width="100" height="200">
-                        <a href="index.php?page=lamp_perdes" align="center"><h5>Perundang-Undangan Desa</h5></a>
+            <h4 class="pb-3 text-center" data-aos="fade-top">PROFIL PEMERINTAHAN DESA SINGABANGSA</h4>
+            <div class="row">
+                <div class="col-lg-12 pt-3 pb-3" align="center" data-aos="fade-top">
+                    <img class="img-fluid rounded mb-4" src="../../images/logo.png" alt="" width="100" height="200">
+                    <a href="index.php?page=lamp_perdes" align="center"><h5>Perundang-Undangan Desa</h5></a>
+                    <p align="justify">Dalam sebuah organisasi/perusahaan bahkan instansi pemerintahan pasti memiliki suatu 
+                        struktur organisasi yang digunakan untuk memudahkan pengkoordinasian dan penyatuan 
+                        usaha serta bagian-bagian maupun tugas dan wewenang dan tanggungjawab. Serta untuk 
+                        menunjukan rantai (garis) perintah dan perangkapan fungsinya yang diperlukan dalam 
+                        suatu organisasi. Sama halnya dengan Kantor Desa Singabangsa, yang mempunyai bagan 
+                         struktur organisasi yang berikut:</p><hr>
+                </div>
+                <div class="col-lg-12 pt-3" align="center" data-aos="fade-top">
+                    <h5>Struktur Organisasi Desa Singabangsa</h5>
+                    <img class="img-fluid rounded mb-4" src="assets/images/profil/struktur.png" alt="">
+                    <p align="center">
+                        <b>1. KELEMBAGAAN DESA</b><br>
+                        - Kepala Desa : JAYA JUNAEDI<br>
+                        - Sekretaris Desa : MADSA’I SUNARDI’SE<br>
+                        - Kaur Umum : MADSUKI<br>
+                        - Kaur Pemerintahan : SOFYAN AJI SABELA<br>
+                        - Kaur Kesr : YOSEP HANDALA PUTRA<br>
+                        - Kaur Ekbang : EDI KUSWANTO<br>
+                        - Kaur Keuangan : A. SUGANDI<br>
+                        - Kepala Dusun I : SARUDIN<br>
+                        - Kepala Dusun II : SARMADI<br><br>
+                        <b>2. BADAN PERMUSYAWARATAN DESA</b><br>
+                        - Ketua : OONG BAHDIAR<br>
+                        - Anggota : 4 Orang<br>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="bg-blue-100">
+            <div class="container pt-3 pb-3">
+                <h5 class="pt-3 pb-3 text-center" data-aos="fade-top">VISI DAN MISI</h5><hr>
+                <div class="col-lg-12 pt-3" align="center" data-aos="fade-top">
+                    <p align="justify">
+                        <b>1. Visi</b><br>
+                        Visi pembangunan Desa Singabangsa yaitu terwujudanya masyarakat yang bermartabat dan bertaqwa menuju sejahtera.<br><br>
+                        <b>2. Misi</b><br>
+                        Misi pembangunan desa singabangsa yaitu:<br>
+                        1) Membangun masyarakat mandiri melalui penguatan program pembangunan yang berkesinambungan dan berkelanjutan.<br>
+                        2) Menumbuhkan prinsip-prinsip swadaya masyarakat dalam penguatan program pembangunan.<br>
+                        3) Mengangkat nilai kemanusiaan dan menggalang solidaritas serta kesatuan sosial masyarakat.<br>
+                        4) Mampu menjalin kebersamaan dan sinergi dengan pemertintah maupun kelompok masyarakat.<br>
+                        5) Meningkatkan kesejahteraan dan dapat menanggulangi kemiskinan dengan menciptakan lapangan kerja mandiri.<br>
+                        6) Memiliki jiwa kemandirian dalam berusaha, bekerja dan membangun dengan tidak mengabaikan bantuan bantuan pihak lain yang tidak mengikat.<br>
+                        7) Mewujudkan pembangunan dengan kondisi lingkungan yang bersih, sehat, produktif dan lestari.<br>
+                    </p>
+                 </div>
+            </div>
+        </div>
+
+        <div class="container pb-3 pt-2">
+            <div class="row">
+                <div class="col-lg-12 pt-3" align="center" data-aos="fade-top">
+                    <h5 class="pb-3">Lembaga Masyarakat Desa</h5>
+                </div>
+            </div>
+        </div>
+        <div class="container pb-3 pt-2">
+            <div class="row" align="center">
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <h6><a href="index.php?page=lamp_linmas">LINMAS</a></h6><br>
+                        <img src="assets/images/profil/linmas.png" class="img-responsive" width="100"><br><br>
                     </div>
                 </div>
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <h6><a href="index.php?page=lamp_lpmd">LPMD</a></h6><br>
+                        <img src="assets/images/profil/lpmd.jpg" class="img-responsive" width="100"><br><br>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <h6><a href="index.php?page=lamp_gapoktan">GAPOKTAN</a></h6><br>
+                        <img src="assets/images/profil/gapoktan.jpg" class="img-responsive" width="100"><br><br>
+                    </div>
+                </div>
+                    <div class="col-md-3">
+                    <div class="thumbnail">
+                        <h6><a href="index.php?page=lamp_rt">RT & RW</a></h6><br>
+                        <img src="assets/images/profil/rt.jpg"class="img-responsive" width="100">
+                    </div>
+                </div>
+            </div>
         </div>
+
     </section>
 
 
