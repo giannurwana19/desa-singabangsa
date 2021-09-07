@@ -65,7 +65,7 @@
                     <a class="nav-link" href="agenda.php">Agenda</a>
                     <a class="nav-link" href="galeri.php">Galeri</a>
                     <a class="nav-link" href="panduan.php">Panduan</a>
-                    <a class="nav-link" href="kontak,php">Kontak</a>
+                    <a class="nav-link" href="kontak.php">Kontak</a>
                 </div>
             </div>
         </div>
@@ -73,7 +73,7 @@
 
     <section id="profil-desa" class="py-5">
         <div class="container pb-3">
-            <h4 class="pb-3 text-center" data-aos="fade-top">PROFIL DESA SINGABANGSA</h4>
+            <h4 class="pb-5 text-center" data-aos="fade-top">PROFIL DESA SINGABANGSA</h4>
             <div class="row">
                 <div class="col-lg-5 pb-3 text-center" data-aos="fade-up" data-aos-delay="200">
                     <img src="../../images/peta.png" class="img-fluid mr-3" alt="peta" width="400">
@@ -98,8 +98,12 @@
                     <p>Jumlah Penduduk Desa Singabangsa sampai akhir bulan Desember Tahun 2017
                         tercatat sebanyak 3,998 Jiwa Dengan Jumlah Kartu Keluarga Sebanyak : 912 Kepala Keluarga (KK)<br>
                         Untuk melihat Grafik/Chard pertumbuhan penduduk Desa Singabangsa klik
+<<<<<<< Updated upstream
                         <a href="index.php?page=statistik"><b><u>disini</u></b></a><br>
                     </p>
+=======
+                        <a href="statistik.php"><b><u>disini</u></b></a><br></p>
+>>>>>>> Stashed changes
 
                 </div>
             </div>
@@ -146,7 +150,7 @@
 
     <section id="profil-pemerintah">
         <div class="container pb-3">
-            <h4 class="pb-3 text-center" data-aos="fade-top">PROFIL PEMERINTAHAN DESA SINGABANGSA</h4>
+            <h4 class="pb-5 text-center" data-aos="fade-top">PROFIL PEMERINTAHAN DESA SINGABANGSA</h4>
             <div class="row">
                 <div class="col-lg-12 pt-3 pb-3" align="center" data-aos="fade-top">
                     <img class="img-fluid rounded mb-4" src="../../images/logo.png" alt="" width="100" height="200">
@@ -213,7 +217,7 @@
                 </div>
             </div>
         </div>
-        <div class="container pb-3 pt-2">
+        <div class="container pb-3 pt-2" data-aos="fade-top">
             <div class="row" align="center">
                 <div class="col-6 col-lg-3">
                     <div class="thumbnail">
