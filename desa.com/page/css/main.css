@@ -2,10 +2,6 @@
   scroll-behavior: smooth;
 }
 
-body {
-  margin-bottom: 3000px;
-}
-
 p {
   font-size: 14px;
 }
@@ -45,4 +41,8 @@ p {
 
 .text-blue-900 {
   color: #22577a;
+}
+
+.text-blue-50 {
+  color: #e3f2fd;
 }

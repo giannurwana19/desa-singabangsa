@@ -75,60 +75,61 @@
         <div class="container pb-3">
             <h4 class="pb-3 text-center" data-aos="fade-top">PROFIL DESA SINGABANGSA</h4>
             <div class="row">
-                    <div class="col-lg-5 pb-3" data-aos="fade-up" data-aos-delay="200">
-                        <img src="../../images/peta.png" class="float-left mr-3" alt="peta" width="400">
-                    </div>
-                    <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-5 pb-3 text-center" data-aos="fade-up" data-aos-delay="200">
+                    <img src="../../images/peta.png" class="img-fluid mr-3" alt="peta" width="400">
+                </div>
+                <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
 
-                        <h5>Lokasi Wilayah</h5>
-                        <p><strong>Desa Singabangsa</strong> merupakan salah satu Desa di wilayah Kecamatan Tenjo, Kabupaten Bogor, Provinsi Jawa Barat, dengan luas wilayah 303.262 Ha. Yang terbagi dalam 2 Dusun 4 Rukun Warga (RW), 15 Rukun Tetangga (RT).<br>
+                    <h5>Lokasi Wilayah</h5>
+                    <p><strong>Desa Singabangsa</strong> merupakan salah satu Desa di wilayah Kecamatan Tenjo, Kabupaten Bogor, Provinsi Jawa Barat, dengan luas wilayah 303.262 Ha. Yang terbagi dalam 2 Dusun 4 Rukun Warga (RW), 15 Rukun Tetangga (RT).<br>
                         Jarak Kantor Desa ke Ibu Kota Kecamatan, Kabupaten Bogor, Provinsi Jawa Barat dan ke Ibukota Negara adalah sebagai berikut :<br>
                         1. Ibu Kota Kecamatan Tenjo 5 Km<br>
                         2. Ibu Kota Kabupaten Bogor 80 Km<br>
                         3. Ibu Kota Provinsi Jawa Barat 120 Km<br>
                         4. Ibu Kota Negara 60 Km<br></p>
 
-                        <h5>Batas Wilayah</h5>
-                        <p>1. Sebelah Utara Berbatasan dengan Tangerang<br>
+                    <h5>Batas Wilayah</h5>
+                    <p>1. Sebelah Utara Berbatasan dengan Tangerang<br>
                         2. Sebelah Timur Berbatasan dengan Desa Cilaku<br>
                         3. Sebelah Selatan Berbatasan dengan Desa Tenjo<br>
                         4. Sebelah Barat Berbatasan dengan Tangerang<br></p>
-                    
-                        <h5>Penduduk Desa</h5>
-                        <p>Jumlah Penduduk Desa Singabangsa sampai akhir bulan Desember Tahun 2017
+
+                    <h5>Penduduk Desa</h5>
+                    <p>Jumlah Penduduk Desa Singabangsa sampai akhir bulan Desember Tahun 2017
                         tercatat sebanyak 3,998 Jiwa Dengan Jumlah Kartu Keluarga Sebanyak : 912 Kepala Keluarga (KK)<br>
                         Untuk melihat Grafik/Chard pertumbuhan penduduk Desa Singabangsa klik
-                        <a href="index.php?page=statistik"><b><u>disini</u></b></a><br></p>
+                        <a href="index.php?page=statistik"><b><u>disini</u></b></a><br>
+                    </p>
 
-                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="bg-blue-50">
+        <div class="bg-light">
             <div class="container pt-3">
                 <h5 class="pt-3 pb-3 text-center" data-aos="fade-top">Keadaan Fisik/Geografi Desa</h5>
                 <div class="row">
-                    
+
                     <div class="col-md-5 py-3 text-justify" data-aos="fade-right" data-aos-delay="200">
                         <p>Pemanfaatan Lahan/Penggunaan tanah di Desa Singabangsa sebagai berikut:<br>
-                        - Perumahan/Pemukiman dan Pekarangan : 127.674 Ha<br>
-                        - Sawah : 83 Ha<br>
-                        - Ladang dan Huma : 63.988 Ha<br>
-                        - Jalan : 2 Ha<br>
-                        - Pemakaman / Kuburan : 1.5 Ha<br>
-                        - Kantor Desa : 1.000 M 2<br>
-                        - Lapangan Olah Raga : 2 Ha<br>
-                        - Tanah/Banggunan Pendidikan : 1 Ha<br>
-                        - Tanah / Banguanan Peribadatan : 2 Ha<br></p>
+                            - Perumahan/Pemukiman dan Pekarangan : 127.674 Ha<br>
+                            - Sawah : 83 Ha<br>
+                            - Ladang dan Huma : 63.988 Ha<br>
+                            - Jalan : 2 Ha<br>
+                            - Pemakaman / Kuburan : 1.5 Ha<br>
+                            - Kantor Desa : 1.000 M 2<br>
+                            - Lapangan Olah Raga : 2 Ha<br>
+                            - Tanah/Banggunan Pendidikan : 1 Ha<br>
+                            - Tanah / Banguanan Peribadatan : 2 Ha<br></p>
 
                         <p>Sedangkan Tanah Kas Desa Seluas 11 Ha, penggunaannya adalah sebagi berikut:<br>
-                        - Kantor Desa : 1.000 M 2<br>
-                        - SD : 5.000 M 2<br>
-                        - Tanah Makam / kuburan : 1,5 Ha<br>
-                        - Masjid / Mushola / Majelis Taklim : 2 Ha<br>
-                        - Jalan Desa : 7,5 Ha<br>
-                        - Lapangan Olah raga : 1,9 Ha<br>
-                        - Setu : 3,5 Ha</p>
+                            - Kantor Desa : 1.000 M 2<br>
+                            - SD : 5.000 M 2<br>
+                            - Tanah Makam / kuburan : 1,5 Ha<br>
+                            - Masjid / Mushola / Majelis Taklim : 2 Ha<br>
+                            - Jalan Desa : 7,5 Ha<br>
+                            - Lapangan Olah raga : 1,9 Ha<br>
+                            - Setu : 3,5 Ha</p>
                     </div>
 
                     <div class="col-md-7 py-3" data-aos="fade-left">
@@ -137,7 +138,8 @@
                         </div>
                     </div>
 
-                </div><hr>
+                </div>
+                <hr>
             </div>
         </div>
     </section>
@@ -148,13 +150,16 @@
             <div class="row">
                 <div class="col-lg-12 pt-3 pb-3" align="center" data-aos="fade-top">
                     <img class="img-fluid rounded mb-4" src="../../images/logo.png" alt="" width="100" height="200">
-                    <a href="index.php?page=lamp_perdes" align="center"><h5>Perundang-Undangan Desa</h5></a>
-                    <p align="justify">Dalam sebuah organisasi/perusahaan bahkan instansi pemerintahan pasti memiliki suatu 
-                        struktur organisasi yang digunakan untuk memudahkan pengkoordinasian dan penyatuan 
-                        usaha serta bagian-bagian maupun tugas dan wewenang dan tanggungjawab. Serta untuk 
-                        menunjukan rantai (garis) perintah dan perangkapan fungsinya yang diperlukan dalam 
-                        suatu organisasi. Sama halnya dengan Kantor Desa Singabangsa, yang mempunyai bagan 
-                         struktur organisasi yang berikut:</p><hr>
+                    <a href="index.php?page=lamp_perdes" align="center">
+                        <h5>Perundang-Undangan Desa</h5>
+                    </a>
+                    <p align="justify">Dalam sebuah organisasi/perusahaan bahkan instansi pemerintahan pasti memiliki suatu
+                        struktur organisasi yang digunakan untuk memudahkan pengkoordinasian dan penyatuan
+                        usaha serta bagian-bagian maupun tugas dan wewenang dan tanggungjawab. Serta untuk
+                        menunjukan rantai (garis) perintah dan perangkapan fungsinya yang diperlukan dalam
+                        suatu organisasi. Sama halnya dengan Kantor Desa Singabangsa, yang mempunyai bagan
+                        struktur organisasi yang berikut:</p>
+                    <hr>
                 </div>
                 <div class="col-lg-12 pt-3" align="center" data-aos="fade-top">
                     <h5>Struktur Organisasi Desa Singabangsa</h5>
@@ -179,9 +184,10 @@
             </div>
         </div>
 
-        <div class="bg-blue-100">
+        <div class="bg-light">
             <div class="container pt-3 pb-3">
-                <h5 class="pt-3 pb-3 text-center" data-aos="fade-top">VISI DAN MISI</h5><hr>
+                <h5 class="pt-3 pb-3 text-center" data-aos="fade-top">VISI DAN MISI</h5>
+                <hr>
                 <div class="col-lg-12 pt-3" align="center" data-aos="fade-top">
                     <p align="justify">
                         <b>1. Visi</b><br>
@@ -196,7 +202,7 @@
                         6) Memiliki jiwa kemandirian dalam berusaha, bekerja dan membangun dengan tidak mengabaikan bantuan bantuan pihak lain yang tidak mengikat.<br>
                         7) Mewujudkan pembangunan dengan kondisi lingkungan yang bersih, sehat, produktif dan lestari.<br>
                     </p>
-                 </div>
+                </div>
             </div>
         </div>
 
@@ -209,28 +215,28 @@
         </div>
         <div class="container pb-3 pt-2">
             <div class="row" align="center">
-                <div class="col-md-3">
+                <div class="col-6 col-lg-3">
                     <div class="thumbnail">
                         <h6><a href="index.php?page=lamp_linmas">LINMAS</a></h6><br>
                         <img src="assets/images/profil/linmas.png" class="img-responsive" width="100"><br><br>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-6 col-lg-3">
                     <div class="thumbnail">
                         <h6><a href="index.php?page=lamp_lpmd">LPMD</a></h6><br>
                         <img src="assets/images/profil/lpmd.jpg" class="img-responsive" width="100"><br><br>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-6 col-lg-3">
                     <div class="thumbnail">
                         <h6><a href="index.php?page=lamp_gapoktan">GAPOKTAN</a></h6><br>
                         <img src="assets/images/profil/gapoktan.jpg" class="img-responsive" width="100"><br><br>
                     </div>
                 </div>
-                    <div class="col-md-3">
+                <div class="col-6 col-lg-3">
                     <div class="thumbnail">
                         <h6><a href="index.php?page=lamp_rt">RT & RW</a></h6><br>
-                        <img src="assets/images/profil/rt.jpg"class="img-responsive" width="100">
+                        <img src="assets/images/profil/rt.jpg" class="img-responsive" width="100">
                     </div>
                 </div>
             </div>
