@@ -73,7 +73,8 @@
     </nav>
 
     <div class="container">
-        
+        <h2 class="text-center mt-4">Panduan Administrasi Penduduk</h2>
+        <h5 class="text-center mt-4">Pilih kategori panduan dibawah ini:</h5>
     </div>
 </body>
 </html>
