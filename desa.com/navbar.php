@@ -13,6 +13,7 @@
                 <div class="navbar-nav ml-auto">
                     <a class="nav-link" href="beranda.php">Beranda</a>
                     <a class="nav-link" href="profil.php">Profil</a>
+                    <a class="nav-link" href="berita.php">Berita</a>
                     <a class="nav-link" href="agenda.php">Agenda</a>
                     <a class="nav-link" href="galeri.php">Galeri</a>
                     <a class="nav-link" href="panduan.php">Panduan</a>

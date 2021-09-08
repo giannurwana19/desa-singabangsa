@@ -1,0 +1,26 @@
+.berita h4{
+    margin-top: 8.3%;
+    
+}
+
+.card{
+    box-shadow: -5px 13px 20px -20px rgba(0,0,0,0.64);
+}
+
+ol{
+    list-style: none;
+    margin-left: -16.5%;
+}
+
+@media (max-width: 768px) {
+    .berita h4{
+        margin-top: 22.5%;
+    }
+    .form-control{
+        width: 45%;
+    }
+
+    .btn{
+        margin-left: 3%;
+    }
+}
