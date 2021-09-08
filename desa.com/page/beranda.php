@@ -42,6 +42,12 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -99,41 +105,43 @@
 
     <section id="gallery" class="bg-light py-5">
         <div class="container">
-            <div class="row gap-1 text-center mb-3">
+            <div class="row text-center mb-3">
                 <div class="col">
                     <h4>GALERI</h4>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-4">
-                    <a href="#">
-                        <img src="assets/images/news/news1.jpeg" class="img-fluid gallery-img" data-aos="flip-left" data-aos-delay="100" alt="">
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <a href="#">
-                        <img src="assets/images/news/news2.jpeg" class="img-fluid gallery-img" data-aos="flip-left" data-aos-delay="200" alt="">
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <a href="#">
-                        <img src="assets/images/news/news3.jpeg" class="img-fluid gallery-img" data-aos="flip-left" data-aos-delay="300" alt="">
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <a href="#">
-                        <img src="assets/images/news/news4.jpeg" class="img-fluid gallery-img" data-aos="flip-left" data-aos-delay="400" alt="">
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <a href="#">
-                        <img src="assets/images/news/news5.jpeg" class="img-fluid gallery-img" data-aos="flip-left" data-aos-delay="500" alt="">
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <a href="#">
-                        <img src="assets/images/news/news6.jpeg" class="img-fluid gallery-img" data-aos="flip-left" data-aos-delay="600" alt="">
-                    </a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="100">
+                        <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
+                            <img src="assets/images/news/news1.jpeg" class="rounded" width="100%" height="100%" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="200">
+                        <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
+                            <img src="assets/images/news/news1.jpeg" class="rounded" width="100%" height="100%" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="300">
+                        <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
+                            <img src="assets/images/news/news1.jpeg" class="rounded" width="100%" height="100%" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="400">
+                        <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
+                            <img src="assets/images/news/news1.jpeg" class="rounded" width="100%" height="100%" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="500">
+                        <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
+                            <img src="assets/images/news/news1.jpeg" class="rounded" width="100%" height="100%" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="600">
+                        <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
+                            <img src="assets/images/news/news1.jpeg" class="rounded" width="100%" height="100%" alt="">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
