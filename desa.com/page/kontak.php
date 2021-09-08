@@ -107,7 +107,7 @@
                     </div>
 			        <input type="hidden" name="tanggal" class="form-control" value=" <?php echo date('d-m-Y'); ?> " >
                     <div id="success"></div>
-                        <button name="kirim_saran" type="submit"  class="btn btn-lg btn-primary">Kirim</button>
+                        <button name="kirim_saran" type="submit"  class="btn btn-primary">Kirim</button>
                     </form>
                 </div>
             </div>
