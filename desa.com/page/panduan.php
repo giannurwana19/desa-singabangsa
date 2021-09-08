@@ -73,7 +73,7 @@
     </nav>
 
     <div class="container">
-        <h4 class="text-center mt-4 ">PANDUAN ADMINISTRASI PENDUDUK</h4>
+        <h4 class="text-center mt-4">PANDUAN ADMINISTRASI PENDUDUK</h4>
         <h5 class="text-center mt-4 font-weight-normal">Pilih kategori panduan dibawah ini:</h5>
 
     <!-- category -->
@@ -83,9 +83,24 @@
        <a href="index.php?page=panduan&&kt_panduan=akte"><button type="button" class="btn btn-outline-primary">Akte</button></a>
        <a href="index.php?page=panduan&&kt_panduan=skck"><button type="button" class="btn btn-outline-primary">SKCK</button></a>
        <a href="index.php?page=panduan&&kt_panduan=srt_kematian"><button type="button" class="btn btn-outline-primary">Surat Kematian</button></a>
-          
        </div>
     <hr>
-    </div>
+
+    <!-- panduan file download -->
+    <section>
+        <img src="./assets/images/panduan/kk.png" alt="panduan" class="img-fluid" data-aos="fade-down">
+
+        <h6 class="text-center font-weight-bolder" data-aos="fade-down" data-aos-duration="500" data-aos-easing="linear">Download file panduan: <a href="./assets/doc/kk.docx">disini</a></h6>
+    </section>
+        </div>
+
+        <!-- footer page-->
+        <?php require '../footer.php' ?>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="js/index.js"></script>
 </body>
 </html>

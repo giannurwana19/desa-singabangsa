@@ -146,7 +146,7 @@
                 <div class="col-md-8">
                     <div class="news-container">
                         <div class="row news-item border-bottom mb-4">
-                            <div class="col-md-8 mb-3 order-sm-2 order-md-1">
+                            <div class="col-md-8 order-2 order-sm-2 order-md-1 order-lg-1 mb-3">
                                 <a href="#" class="text-reset">
                                     <h6 class="text-justify text-blue-900">Optimalkan Sosialisasi Penerapan Ganjil Genap Kawasan Puncak, Bupati Bogor Lakukan Rapat Secara Virtual Dengan Kemenhub RI</h6>
                                 </a>
@@ -156,12 +156,12 @@
                                 </div>
                                 <p class="text-justify">Menurutnya, tujuan mengundang masyarakat wilayah kawasan Puncak untuk memberikan penjelasan, dan meminta masukan kepada masyarakat yang kemudian akan ia sampaikan ke kementerian sebagai bahan kajian... <a href="#" class="text-decoration-none text-blue-900 font-weight-bold">Selengkapnya <i class="fas fa-angle-double-right"></i></a></p>
                             </div>
-                            <div class="col-md-4 mb-2 order-sm-1 order-md-2">
+                            <div class="col-md-4 order-1 order-sm-1 order-md-2 order-lg-2 mb-2">
                                 <img src="assets/images/news/news1.jpeg" class="img-fluid rounded" alt="">
                             </div>
                         </div>
                         <div class="row news-item border-bottom mb-4">
-                            <div class="col-md-8 mb-3 order-sm-2 order-md-1">
+                            <div class="col-md-8 order-2 order-sm-2 order-md-1 order-lg-1 mb-3">
                                 <a href="#" class="text-reset">
                                     <h6 class="text-justify text-blue-900">Optimalkan Sosialisasi Penerapan Ganjil Genap Kawasan Puncak, Bupati Bogor Lakukan Rapat Secara Virtual Dengan Kemenhub RI</h6>
                                 </a>
@@ -171,12 +171,12 @@
                                 </div>
                                 <p class="text-justify">Menurutnya, tujuan mengundang masyarakat wilayah kawasan Puncak untuk memberikan penjelasan, dan meminta masukan kepada masyarakat yang kemudian akan ia sampaikan ke kementerian sebagai bahan kajian... <a href="#" class="text-decoration-none text-blue-900 font-weight-bold">Selengkapnya <i class="fas fa-angle-double-right"></i></a></p>
                             </div>
-                            <div class="col-md-4 mb-2 order-sm-1 order-md-2">
+                            <div class="col-md-4 order-1 order-sm-1 order-md-2 order-lg-2 mb-2">
                                 <img src="assets/images/news/news1.jpeg" class="img-fluid rounded" alt="">
                             </div>
                         </div>
                         <div class="row news-item border-bottom mb-4">
-                            <div class="col-md-8 mb-3 order-sm-2 order-md-1">
+                            <div class="col-md-8 order-2 order-sm-2 order-md-1 order-lg-1 mb-3">
                                 <a href="#" class="text-reset">
                                     <h6 class="text-justify text-blue-900">Optimalkan Sosialisasi Penerapan Ganjil Genap Kawasan Puncak, Bupati Bogor Lakukan Rapat Secara Virtual Dengan Kemenhub RI</h6>
                                 </a>
@@ -186,7 +186,7 @@
                                 </div>
                                 <p class="text-justify">Menurutnya, tujuan mengundang masyarakat wilayah kawasan Puncak untuk memberikan penjelasan, dan meminta masukan kepada masyarakat yang kemudian akan ia sampaikan ke kementerian sebagai bahan kajian... <a href="#" class="text-decoration-none text-blue-900 font-weight-bold">Selengkapnya <i class="fas fa-angle-double-right"></i></a></p>
                             </div>
-                            <div class="col-md-4 mb-2 order-sm-1 order-md-2">
+                            <div class="col-md-4 order-1 order-sm-1 order-md-2 order-lg-2 mb-2">
                                 <img src="assets/images/news/news1.jpeg" class="img-fluid rounded" alt="">
                             </div>
                         </div>
