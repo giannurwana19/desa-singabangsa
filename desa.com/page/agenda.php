@@ -63,7 +63,7 @@
                         </div>
                         <div>
                             <div>
-                                <a href="#" class="text-reset">
+                                <a href="detail_agenda.php" class="text-reset">
                                     <strong class="text-sm text-blue-900">SK PERPANJANGAN PPKM LEVEL 3 TERBARU</strong>
                                 </a>
                             </div>
@@ -83,7 +83,7 @@
                         </div>
                         <div>
                             <div>
-                                <a href="#" class="text-reset">
+                                <a href="detail_agenda.php" class="text-reset">
                                     <strong class="text-sm text-blue-900">Agenda Kegiatan Pemerintah Kabupaten Bogor</strong>
                                 </a>
                             </div>
@@ -103,7 +103,7 @@
                         </div>
                         <div>
                             <div>
-                                <a href="#" class="text-reset">
+                                <a href="detail_agenda.php" class="text-reset">
                                     <strong class="text-sm text-blue-900">PERPANJANGAN PPKM DARURAT LEVEL 4</strong>
                                 </a>
                             </div>
@@ -123,7 +123,7 @@
                         </div>
                         <div>
                             <div>
-                                <a href="#" class="text-reset">
+                                <a href="detail_agenda.php" class="text-reset">
                                     <strong class="text-sm text-blue-900">SK PERPANJANGAN PPKM LEVEL 3 TERBARU</strong>
                                 </a>
                             </div>
@@ -143,7 +143,7 @@
                         </div>
                         <div>
                             <div>
-                                <a href="#" class="text-reset">
+                                <a href="detail_agenda.php" class="text-reset">
                                     <strong class="text-sm text-blue-900">Agenda Kegiatan Pemerintah Kabupaten Bogor</strong>
                                 </a>
                             </div>
@@ -163,7 +163,7 @@
                         </div>
                         <div>
                             <div>
-                                <a href="#" class="text-reset">
+                                <a href="detail_agenda.php" class="text-reset">
                                     <strong class="text-sm text-blue-900">PERPANJANGAN PPKM DARURAT LEVEL 4</strong>
                                 </a>
                             </div>
