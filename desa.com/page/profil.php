@@ -98,7 +98,8 @@
                     <p>Jumlah Penduduk Desa Singabangsa sampai akhir bulan Desember Tahun 2017
                         tercatat sebanyak 3,998 Jiwa Dengan Jumlah Kartu Keluarga Sebanyak : 912 Kepala Keluarga (KK)<br>
                         Untuk melihat Grafik/Chard pertumbuhan penduduk Desa Singabangsa klik
-                        <a href="index.php?page=statistik"><b><u>disini</u></b></a><br>
+                        <!-- <a href="index.php?page=statistik"><b><u>disini</u></b></a><br> -->
+                        <a href="statistik.php"><b><u>disini</u></b></a><br>
                     </p>
 
                 </div>
