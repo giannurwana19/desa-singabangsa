@@ -130,12 +130,12 @@
         <div class="container pb-3">
             <h4 class="pb-5 text-center" data-aos="fade-top">PROFIL PEMERINTAHAN DESA SINGABANGSA</h4>
             <div class="row">
-                <div class="col-lg-12 pt-3 pb-3" align="center" data-aos="fade-top">
+                <div class="col-lg-12 pt-3 pb-3 text-center" data-aos="fade-top">
                     <img class="img-fluid rounded mb-4" src="../../images/logo.png" alt="" width="100" height="200">
-                    <a href="index.php?page=lamp_perdes" align="center">
+                    <a href="index.php?page=lamp_perdes" class="text-center">
                         <h5>Perundang-Undangan Desa</h5>
                     </a>
-                    <p align="justify">Dalam sebuah organisasi/perusahaan bahkan instansi pemerintahan pasti memiliki suatu
+                    <p class="text-justify">Dalam sebuah organisasi/perusahaan bahkan instansi pemerintahan pasti memiliki suatu
                         struktur organisasi yang digunakan untuk memudahkan pengkoordinasian dan penyatuan
                         usaha serta bagian-bagian maupun tugas dan wewenang dan tanggungjawab. Serta untuk
                         menunjukan rantai (garis) perintah dan perangkapan fungsinya yang diperlukan dalam
@@ -143,10 +143,10 @@
                         struktur organisasi yang berikut:</p>
                     <hr>
                 </div>
-                <div class="col-lg-12 pt-3" align="center" data-aos="fade-top">
+                <div class="col-lg-12 pt-3 text-center" data-aos="fade-top">
                     <h5>Struktur Organisasi Desa Singabangsa</h5>
                     <img class="img-fluid rounded mb-4" src="assets/images/profil/struktur.png" alt="">
-                    <p align="center">
+                    <p class="text-center">
                         <b>1. KELEMBAGAAN DESA</b><br>
                         - Kepala Desa : JAYA JUNAEDI<br>
                         - Sekretaris Desa : MADSA’I SUNARDI’SE<br>
@@ -170,8 +170,8 @@
         <div class="bg-light">
             <div class="container pt-3 pb-3">
                 <h5 class="pt-3 pb-3 text-center" data-aos="fade-top">VISI DAN MISI</h5>
-                <div class="col-lg-12 pt-3 pb-3" align="center" data-aos="fade-top">
-                    <p align="justify">
+                <div class="col-lg-12 pt-3 pb-3 text-center" data-aos="fade-top">
+                    <p class="text-justify">
                         <b>1. Visi</b><br>
                         Visi pembangunan Desa Singabangsa yaitu terwujudanya masyarakat yang bermartabat dan bertaqwa menuju sejahtera.<br><br>
                         <b>2. Misi</b><br>
@@ -188,42 +188,73 @@
                 <hr>
             </div>
         </div>
+    </section>
 
+    <section id="lmd">
         <div class="container pb-3 pt-2">
             <div class="row">
-                <div class="col-lg-12 pt-3" align="center" data-aos="fade-top">
+                <div class="col-lg-12 pt-3 text-center" data-aos="fade-top">
                     <h5 class="pb-3">Lembaga Masyarakat Desa</h5>
                 </div>
             </div>
         </div>
         <div class="container pb-3 pt-2" data-aos="fade-top">
-            <div class="row" align="center">
+            <div class="row text-center">
                 <div class="col-6 col-lg-3">
                     <div class="thumbnail">
-                        <h6><a href="index.php?page=lamp_linmas">LINMAS</a></h6><br>
-                        <img src="assets/images/profil/linmas.png" class="img-responsive" width="100"><br><br>
+                        <h6 class="mb-4">LINMAS</h6>
+                        <img class="mb-4" src="assets/images/profil/linmas.png" class="img-responsive" width="100"><br>
+                        <!-- <a href="index.php?page=lamp_linmas">Lihat dokumen lampiran</a> -->
+                        <!-- <a href="profil.php?lamp=linmas">Lihat dokumen lampiran</a> -->
+                        <a href="lamp_linmas.php">Lihat dokumen lampiran</a>
                     </div>
                 </div>
                 <div class="col-6 col-lg-3">
                     <div class="thumbnail">
-                        <h6><a href="index.php?page=lamp_lpmd">LPMD</a></h6><br>
-                        <img src="assets/images/profil/lpmd.jpg" class="img-responsive" width="100"><br><br>
+                        <h6 class="mb-4">LPMD</h6>
+                        <img class="mb-4" src="assets/images/profil/lpmd.jpg" class="img-responsive" width="100"><br>
+                        <a href="lamp_lpmd.php">Lihat dokumen lampiran</a>
                     </div>
                 </div>
                 <div class="col-6 col-lg-3">
                     <div class="thumbnail">
-                        <h6><a href="index.php?page=lamp_gapoktan">GAPOKTAN</a></h6><br>
-                        <img src="assets/images/profil/gapoktan.jpg" class="img-responsive" width="100"><br><br>
+                        <h6 class="mb-4">GAPOKTAN</h6>
+                        <img class="mb-4" src="assets/images/profil/gapoktan.jpg" class="img-responsive" width="100"><br>
+                        <a href="lamp_gapoktan.php">Lihat dokumen lampiran</a>
                     </div>
                 </div>
                 <div class="col-6 col-lg-3">
                     <div class="thumbnail">
-                        <h6><a href="index.php?page=lamp_rt">RT & RW</a></h6><br>
-                        <img src="assets/images/profil/rt.jpg" class="img-responsive" width="100">
+                        <h6 class="mb-4">RT & RW</h6>
+                        <img class="mb-4" src="assets/images/profil/rt.jpg" class="img-responsive" width="100"><br>
+                        <a href="lamp_rt.php">Lihat dokumen lampiran</a>
                     </div>
                 </div>
             </div>
         </div>
+
+        <?php
+        // if (isset($_GET['lamp'])) {
+        //     switch ($_GET['lamp']) {
+        //         case 'linmas':
+        //             include 'lamp_linmas.php';
+        //             break;
+        //         case 'lpmd':
+        //             include 'lamp_lpmd.php';
+        //             break;
+        //         case 'gapoktan':
+        //             include 'lamp_gapoktan.php';
+        //             break;
+        //         case 'rt':
+        //             include 'lamp_rt.php';
+        //             break;
+        //         default:
+        //             echo '<script>window.location.href = "404.php"</script>';
+        //     }
+        // } else {
+        //     include 'lamp_linmas.php';
+        // }
+        ?>
 
     </section>
 
