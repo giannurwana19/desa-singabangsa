@@ -43,7 +43,7 @@
 
     <!-- aos  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Berita - Desa Singabangsa</title>
 </head>
 <body>
 
@@ -66,7 +66,7 @@
                               <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb bg-blue-900" style="margin-left: .43%;">
                                     <li class="breadcrumb-item text-white" >
-                                        <a href="beranda.php">Beranda</a>
+                                        <a href="berita.php">Berita</a>
                                     </li>
                                     <li class="breadcrumb-item active text-white" aria-current="page">Berita Terkini</li>
                                 </ol>
