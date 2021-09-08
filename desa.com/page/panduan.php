@@ -48,59 +48,59 @@
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg font-weight-bold navbar-dark bg-blue-900">
-        <div class="container">
-            <nav class="navbar navbar-dark bg-blue-900">
-                <a class="navbar-brand" href="#">
-                    <img src="../../images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-                    <span class="title-navbar"><span class="d-none d-sm-inline-block">DESA</span> SINGABANGSA</span>
-                </a>
-            </nav>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto">
-                    <a class="nav-link" href="#beranda">Beranda</a>
-                    <a class="nav-link" href="profil.php">Profil</a>
-                    <a class="nav-link" href="agenda.hp">Agenda</a>
-                    <a class="nav-link" href="#galeri">Galeri</a>
-                    <a class="nav-link" href="panduan.php">Panduan</a>
-                    <a class="nav-link" href="#kontak">Kontak</a>
-                </div>
+    <?php require '../navbar.php' ?>
+
+    <section class="py-5">
+        <div class="container mt-5" data-aos="fade-top">
+            <h4 class="text-center mt-4">PANDUAN ADMINISTRASI PENDUDUK</h4>
+            <h5 class="text-center mt-4 font-weight-normal">Pilih kategori panduan dibawah ini:</h5>
+
+            <!-- category -->
+            <div class="category text-center mt-4">
+                <a href="panduan.php?kategori=kk"><button type="button" class="btn btn-outline-primary">Kartu Keluarga</button></a>
+                <a href="panduan.php?kategori=ektp"><button type="button" class="btn btn-outline-primary">E-KTP</button></a>
+                <a href="panduan.php?kategori=akte"><button type="button" class="btn btn-outline-primary">Akte</button></a>
+                <a href="panduan.php?kategori=skck"><button type="button" class="btn btn-outline-primary">SKCK</button></a>
+                <a href="panduan.php?kategori=skem"><button type="button" class="btn btn-outline-primary">Surat Kematian</button></a>
             </div>
+            <hr>
         </div>
-    </nav>
 
-    <div class="container">
-        <h4 class="text-center mt-4">PANDUAN ADMINISTRASI PENDUDUK</h4>
-        <h5 class="text-center mt-4 font-weight-normal">Pilih kategori panduan dibawah ini:</h5>
-
-    <!-- category -->
-       <div class="category d-flex justify-content-center flex-wrap mt-4">
-       <a href="index.php?page=panduan&&kt_panduan=kk"><button type="button" class="btn btn-outline-primary">Kartu Keluarga</button></a>
-       <a href="index.php?page=panduan&&kt_panduan=ektp"><button type="button" class="btn btn-outline-primary">E-KTP</button></a>
-       <a href="index.php?page=panduan&&kt_panduan=akte"><button type="button" class="btn btn-outline-primary">Akte</button></a>
-       <a href="index.php?page=panduan&&kt_panduan=skck"><button type="button" class="btn btn-outline-primary">SKCK</button></a>
-       <a href="index.php?page=panduan&&kt_panduan=srt_kematian"><button type="button" class="btn btn-outline-primary">Surat Kematian</button></a>
-       </div>
-    <hr>
-
-    <!-- panduan file download -->
-    <section>
-        <img src="./assets/images/panduan/kk.png" alt="panduan" class="img-fluid" data-aos="fade-down">
-
-        <h6 class="text-center font-weight-bolder" data-aos="fade-down" data-aos-duration="500" data-aos-easing="linear">Download file panduan: <a href="./assets/doc/kk.docx">disini</a></h6>
+        <?php
+        if (isset($_GET['kategori'])) {
+            switch ($_GET['kategori']) {
+                case 'kk':
+                    include 'panduan_kk.php';
+                    break;
+                case 'ektp':
+                    include 'panduan_ektp.php';
+                    break;
+                case 'akte':
+                    include 'panduan_akte.php';
+                    break;
+                case 'skck':
+                    include 'panduan_skck.php';
+                    break;
+                case 'skem':
+                    include 'panduan_skem.php';
+                    break;
+                default:
+                    echo '<script>window.location.href = "404.php"</script>';
+            }
+        } else {
+            include 'panduan_kk.php';
+        }
+        ?>
     </section>
-        </div>
 
-        <!-- footer page-->
-        <?php require '../footer.php' ?>
+    <!-- footer page-->
+    <?php require '../footer.php' ?>
 
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/index.js"></script>
 </body>
+
 </html>

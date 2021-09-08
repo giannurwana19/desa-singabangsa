@@ -1,4 +1,4 @@
-.btn-outline-primary:hover{
+/* .btn-outline-primary:hover{
     color: white;
     background-color: #22577a !important;
     text-decoration: none;
@@ -8,23 +8,20 @@
 .btn{
     border-radius: 1rem;
     margin-left: 10px;
-}
-.a{
+} */
+/* .a{
     margin-left: 5%;
-}
+} */
 
-img{
+/* img{
     margin-left: 26%;
-}
+} */
 
-
-
-
-@media (max-width: 768px){
-    .btn{
-        margin-top: 10px;
-    }
-    img{
-        margin-left: -1.8%;
-    }
+@media (max-width: 768px) {
+  .btn {
+    margin-top: 10px;
+  }
+  img {
+    margin-left: -1.8%;
+  }
 }
