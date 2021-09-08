@@ -53,7 +53,7 @@
     <?php require '../navbar.php' ?>
  
     <section id="kontak" class="py-5">
-        <div class="mt-5 container">
+        <div class="container pt-5">
             <h4 class="pb-4 text-center">HUBUNGI KAMI</h4>
             <div class="row">
                 <div class="col-lg-7 mb-4">
@@ -61,7 +61,7 @@
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.6097846337207!2d106.4657244140688!3d-6.314880963552579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e42089ec4a1b815%3A0x1337a097e04e30d2!2sKantor+Desa+Singabangsa!5e0!3m2!1sid!2sid!4v1516082446667" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                 </div>
-                <div class="col-lg-5 mb-4" data-aos="zoom-in-left" data-aos-delay="200">
+                <div class="col-lg-5 mb-4" data-aos="fade-up-left" data-aos-delay="200">
                     <h4>Informasi dan Pelayanan</h4><hr>
                     <p><strong>Kantor Kepala Desa</strong> - Singabangsa Rt. 004 Te. 002, Singabangsa, Tenjo, Bogor, Jawa Barat 16370</p>
                     <p><strong>Telpon</strong> - (123) 456-7890</p>
@@ -69,7 +69,7 @@
                     <p><strong>Waktu Pelayanan</strong> - Senin - Jumat Pukul 09:00 sampai 17:00 WIB.</p>
                 </div>
             </div>
-            <div class="row" data-aos="zoom-out-right" data-aos-delay="200">
+            <div class="row">
                 <div class="col-lg-7 mb-7">
                     <h5 class="pt-4">Kirim kritik, saran, dan keluhan Anda di bawah ini :</h5><hr>
                     <form role="form" method="POST" action="pages/prs_saran.php">
@@ -107,45 +107,14 @@
                     </div>
 			        <input type="hidden" name="tanggal" class="form-control" value=" <?php echo date('d-m-Y'); ?> " >
                     <div id="success"></div>
-                        <button name="kirim_saran" type="submit"  class="btn-kirim">Kirim</button>
+                        <button name="kirim_saran" type="submit"  class="btn btn-primary">Kirim</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer id="footer" class="bg-light pt-5 mt-4">
-        <div class="footer-inner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7 mb-3 text-justify">
-                        <div class="mb-3">
-                            <h5>Desa Singabangsa Kabupaten Bogor</h5>
-                            <p>Silahkan gunakan layanan informasi masyarakat dengan bijak.</p>
-                            <p>Website desa ini adalah salah satu bentuk pelayanan perangkat desa kepada masyarakat Desa Singabangsa maupun masyarakat di luar Desa</p>
-                        </div>
-                        <div class="mt-3">
-                            <h5>Informasi dan Pelayanan</h5>
-                            <p><strong>Kantor Kepala Desa</strong> - Singabangsa Rt. 004 Te. 002, Singabangsa, Tenjo, Bogor, Jawa Barat 16370<br></p>
-                            <p><strong>Telpon</strong> - (123) 456-7890</p>
-                            <p><strong>E-Mail</strong> - <a href="mailto:name@example.com">info@singabangsa.desa.id</a></p>
-                            <p><strong>Waktu Pelayanan</strong> - Senin - Jumat Pukul 09:00 sampai 17:00 WIB.</p>
-                            <p>Klik tombol "Pengaduan" untuk layanan pengaduan atau laporan Pemerintah Kabupaten Bogor.</p>
-                            <a href="http://pengaduan.bogorkab.go.id" target="_blank" class="btn btn-primary">Pengaduan</a>
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="fb-frame">
-                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fbogorkab%2F&amp;tabs=timeline&amp;width=340&amp;height=300&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId=572660399555941" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="1" allow="encrypted-media"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-outer bg-blue-900 text-center py-3">
-            <small class="text-blue-50">&copy;Copyright <span id="year"></span> | Desa Singabangsa</small>
-        </div>
-    </footer>
+    <?php require '../footer.php' ?>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
