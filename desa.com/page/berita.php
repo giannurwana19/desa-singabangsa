@@ -51,7 +51,6 @@
     <?php require '../navbar.php' ?>
 
     <div class="container">
-    <div class="berita">
        <h4 class="text-center">BERITA TERKINI</h4>
 
     <form class="form-inline mt-4">
@@ -61,8 +60,10 @@
 
     <hr>
         <div class="row">
-        <div class="col-md-8 d-flex flex-wrap">
-            <div class="news-card">
+        <div class="col-md-11">
+            <div class="row">
+                <div class="col-md-11 d-flex flex-wrap">
+                <div class="news-card">
                 <div class="card my-4 mx-2" style="width: 18rem;">
                 <img src="./assets/images/news/news1.jpeg" class="card-img-top" alt="news-image">
                 <div class="card-body">
@@ -161,6 +162,9 @@
                     </ol>
                 </div>
                 </div>
+            </div>
+           
+                </div>
                 </div>
             </div>
         </div>
@@ -230,7 +234,6 @@
                     </div>
                     <a href="#" class="text-blue-900 font-weight-bold">Selengkapnya <i class="fas fa-angle-double-right"></i></a>
                 </div>
-        </div>
         </div>
         </div>
         </div>

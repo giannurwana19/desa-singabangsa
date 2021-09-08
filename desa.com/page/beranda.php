@@ -147,7 +147,7 @@
                     <div class="news-container">
                         <div class="row news-item border-bottom mb-4">
                             <div class="col-md-8 order-2 order-sm-2 order-md-1 order-lg-1 mb-3">
-                                <a href="berita.php" class="text-reset">
+                                <a href="#" class="text-reset">
                                     <h6 class="text-justify text-blue-900">Optimalkan Sosialisasi Penerapan Ganjil Genap Kawasan Puncak, Bupati Bogor Lakukan Rapat Secara Virtual Dengan Kemenhub RI</h6>
                                 </a>
                                 <div class="mb-2 text-blue-900 font-weight-bold">
