@@ -2,8 +2,10 @@
     margin-top: 8.3%;
     
 }
-.card{
+.card:hover{
     box-shadow: -5px 13px 20px -20px rgba(0,0,0,0.64);
+    cursor: pointer;
+    transition: .5s;
 }
 
 ol{
@@ -21,5 +23,12 @@ ol{
 
     .btn{
         margin-left: 3%;
+    }
+}
+
+/* media screen detail berita */
+@media (max-width: 768px){
+    .breadcrumb{
+      width: 200%;
     }
 }
