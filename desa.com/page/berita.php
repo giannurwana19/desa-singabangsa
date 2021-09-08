@@ -60,7 +60,7 @@
 
     <hr>
         <div class="row">
-        <div class="col-md-11">
+        <div class="col-md-8">
             <div class="row">
                 <div class="col-md-11 d-flex flex-wrap">
                 <div class="news-card">
@@ -168,7 +168,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
                <h4 class="mb-3">Agenda</h4>
                     <div class="agenda">
                         <div class="row mb-2">
