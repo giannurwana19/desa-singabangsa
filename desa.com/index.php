@@ -1,5 +1,5 @@
 <?php
-include 'navbar.php';
+include 'navbar.html';
 
 //Include navbar.html
 
@@ -54,4 +54,4 @@ if (isset($_GET['page'])) {
     include 'pages/beranda.php';
 }
 //Include file footer.php
-include 'footer.php';
+include 'footer.html';
