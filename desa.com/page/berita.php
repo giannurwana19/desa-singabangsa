@@ -51,7 +51,6 @@
     <?php require '../navbar.php' ?>
 
     <div class="container">
-    <div class="berita">
        <h4 class="text-center">BERITA TERKINI</h4>
 
     <form class="form-inline mt-4">
@@ -60,9 +59,13 @@
     </form>
 
     <hr>
+    <section class="py-5">
+        <div class="container">
         <div class="row">
-        <div class="col-md-8 d-flex flex-wrap">
-            <div class="news-card">
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-md-11 d-flex flex-wrap">
+                <div class="news-card">
                 <div class="card my-4 mx-2" style="width: 18rem;">
                 <img src="./assets/images/news/news1.jpeg" class="card-img-top" alt="news-image">
                 <div class="card-body">
@@ -71,8 +74,8 @@
                 </a>
                 <div class="mt-2 font-weight-bold">
                     <ol>
-                        <li><small><i class="far fa-clock text-blue-900 "> 27 September 2021</i></small></li>
-                        <li><small><i class="fas fa-user text-blue-900 "> administrator</i></small></li>
+                         <li><small class="text-blue-900"><i class="far fa-clock text-blue-900 "></i> 27 September 2021</small></li>
+                        <li><small class="text-blue-900"><i class="fas fa-user text-blue-900 "></i> administrator</small></li>
                     </ol>
                 </div>
                 </div>
@@ -88,8 +91,12 @@
                 </a>
                 <div class="mt-2 font-weight-bold">
                     <ol>
-                        <li><small><i class="far fa-clock text-blue-900 "> 27 September 2021</i></small></li>
-                        <li><small><i class="fas fa-user text-blue-900 "> administrator</i></small></li>
+                         <li>
+                             <small class="text-blue-900"><i class="far fa-clock text-blue-900 "></i> 27 September 2021</small>
+                            </li>
+                        <li>
+                            <small class="text-blue-900"><i class="fas fa-user text-blue-900 "></i>     administrator</small>
+                        </li>
                     </ol>
                 </div>
                 </div>
@@ -105,8 +112,12 @@
                 </a>
                 <div class="mt-2 font-weight-bold">
                     <ol>
-                        <li><small><i class="far fa-clock text-blue-900 "> 27 September 2021</i></small></li>
-                        <li><small><i class="fas fa-user text-blue-900 "> administrator</i></small></li>
+                        <li>
+                            <small class="text-blue-900"><i class="far fa-clock text-blue-900 "></i> 27 September 2021</small>
+                        </li>
+                        <li>
+                            <small class="text-blue-900"><i class="fas fa-user text-blue-900 "></i> administrator</small>
+                        </li>
                     </ol>
                 </div>
                 </div>
@@ -122,8 +133,12 @@
                 </a>
                 <div class="mt-2 font-weight-bold">
                     <ol>
-                        <li><small><i class="far fa-clock text-blue-900 "> 27 September 2021</i></small></li>
-                        <li><small><i class="fas fa-user text-blue-900 "> administrator</i></small></li>
+                        <li>
+                            <small class="text-blue-900"><i class="far fa-clock text-blue-900 "></i> 27 September 2021</small>
+                        </li>
+                        <li>
+                            <small class="text-blue-900"><i class="fas fa-user text-blue-900 "></i> administrator</small>
+                        </li>
                     </ol>        
                 </div>
                 </div>
@@ -139,8 +154,12 @@
                 </a>
                 <div class="mt-2 font-weight-bold">
                     <ol>
-                        <li><small><i class="far fa-clock text-blue-900 "> 27 September 2021</i></small></li>
-                        <li><small><i class="fas fa-user text-blue-900 "> administrator</i></small></li>
+                         <li>
+                             <small class="text-blue-900"><i class="far fa-clock text-blue-900 "></i> 27 September 2021</small>
+                            </li>
+                        <li>
+                            <small class="text-blue-900"><i class="fas fa-user text-blue-900 "></i> administrator</small>
+                        </li>
                     </ol>        
                 </div>
                 </div>
@@ -156,15 +175,21 @@
                 </a>
                 <div class="mt-2 font-weight-bold">
                     <ol>
-                        <li><small><i class="far fa-clock text-blue-900 "> 27 September 2021</i></small></li>
-                        <li><small><i class="fas fa-user text-blue-900 "> administrator</i></small></li>
+                        <li>
+                            <small class="text-blue-900"><i class="far fa-clock text-blue-900 "></i> 27 September 2021</small>
+                        </li>
+                        <li>
+                            <small class="text-blue-900"><i class="fas fa-user text-blue-900 "></i> administrator</small>
+                        </li>
                     </ol>
                 </div>
+                </div>
+            </div>
                 </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
                <h4 class="mb-3">Agenda</h4>
                     <div class="agenda">
                         <div class="row mb-2">
@@ -234,6 +259,8 @@
         </div>
         </div>
         </div>
+    </section>
+      
   
         <?php require '../footer.php' ?>
 
