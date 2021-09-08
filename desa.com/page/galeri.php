@@ -59,53 +59,80 @@
 
     <section id="galeri" class="py-5">
         <div class="container pt-5">
-            <h4 class="text-center mb-4">Galeri</h4>
+            <h4 class="text-center mb-4">GALERI</h4>
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="100">
-                        <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
-                            <img src="assets/images/news/news1.jpeg" class="rounded" width="100%" height="100%" alt="">
-                        </a>
+                        <div class="image-item">
+                            <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
+                                <img src="assets/images/news/news1.jpeg" class="img-shadow" width="100%" height="100%" alt="">
+                                <div class="overlay">Rapat Sosialisasi Penerapan Ganjil Genap</div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="200">
-                        <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
-                            <img src="assets/images/news/news1.jpeg" class="rounded" width="100%" height="100%" alt="">
-                        </a>
+                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="100">
+                        <div class="image-item">
+                            <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
+                                <img src="assets/images/news/news1.jpeg" class="img-shadow" width="100%" height="100%" alt="">
+                                <div class="overlay">Rapat Sosialisasi Penerapan Ganjil Genap</div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="300">
-                        <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
-                            <img src="assets/images/news/news1.jpeg" class="rounded" width="100%" height="100%" alt="">
-                        </a>
+                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="100">
+                        <div class="image-item">
+                            <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
+                                <img src="assets/images/news/news1.jpeg" class="img-shadow" width="100%" height="100%" alt="">
+                                <div class="overlay">Rapat Sosialisasi Penerapan Ganjil Genap</div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="400">
-                        <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
-                            <img src="assets/images/news/news1.jpeg" class="rounded" width="100%" height="100%" alt="">
-                        </a>
+                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="100">
+                        <div class="image-item">
+                            <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
+                                <img src="assets/images/news/news1.jpeg" class="img-shadow" width="100%" height="100%" alt="">
+                                <div class="overlay">Rapat Sosialisasi Penerapan Ganjil Genap</div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="500">
-                        <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
-                            <img src="assets/images/news/news1.jpeg" class="rounded" width="100%" height="100%" alt="">
-                        </a>
+                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="100">
+                        <div class="image-item">
+                            <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
+                                <img src="assets/images/news/news1.jpeg" class="img-shadow" width="100%" height="100%" alt="">
+                                <div class="overlay">Rapat Sosialisasi Penerapan Ganjil Genap</div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="600">
-                        <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
-                            <img src="assets/images/news/news1.jpeg" class="rounded" width="100%" height="100%" alt="">
-                        </a>
+                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="100">
+                        <div class="image-item">
+                            <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
+                                <img src="assets/images/news/news1.jpeg" class="img-shadow" width="100%" height="100%" alt="">
+                                <div class="overlay">Rapat Sosialisasi Penerapan Ganjil Genap</div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="700">
-                        <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
-                            <img src="assets/images/news/news1.jpeg" class="rounded" width="100%" height="100%" alt="">
-                        </a>
+                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="100">
+                        <div class="image-item">
+                            <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
+                                <img src="assets/images/news/news1.jpeg" class="img-shadow" width="100%" height="100%" alt="">
+                                <div class="overlay">Rapat Sosialisasi Penerapan Ganjil Genap</div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="800">
-                        <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
-                            <img src="assets/images/news/news1.jpeg" class="rounded" width="100%" height="100%" alt="">
-                        </a>
+                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="100">
+                        <div class="image-item">
+                            <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
+                                <img src="assets/images/news/news1.jpeg" class="img-shadow" width="100%" height="100%" alt="">
+                                <div class="overlay">Rapat Sosialisasi Penerapan Ganjil Genap</div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="900">
-                        <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
-                            <img src="assets/images/news/news1.jpeg" class="rounded" width="100%" height="100%" alt="">
-                        </a>
+                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="100">
+                        <div class="image-item">
+                            <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
+                                <img src="assets/images/news/news1.jpeg" class="img-shadow" width="100%" height="100%" alt="">
+                                <div class="overlay">Rapat Sosialisasi Penerapan Ganjil Genap</div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -177,7 +204,7 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="text-blue-900 font-weight-bold">Selengkapnya <i class="fas fa-angle-double-right"></i></a>
+            <a href="agenda.php" class="text-blue-900 font-weight-bold">Selengkapnya <i class="fas fa-angle-double-right"></i></a>
         </div>
     </section>
 

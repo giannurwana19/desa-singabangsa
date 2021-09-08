@@ -61,7 +61,7 @@
     <!-- carousel -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
@@ -90,12 +90,12 @@
         <div class="container">
             <h4 class="pb-3 text-center">TENTANG</h4>
             <div class="row">
-                <div class="col-md-3 py-3" data-aos="fade-right">
+                <div class="col-md-3 py-3" data-aos="zoom-in">
                     <div class="text-center">
                         <img src="../../images/logo.png" class="img-fluid img-logo" alt="logo">
                     </div>
                 </div>
-                <div class="col-md-9 py-3 text-justify" data-aos="fade-left" data-aos-delay="200">
+                <div class="col-md-9 py-3 text-justify" data-aos="zoom-in" data-aos-delay="200">
                     <p><strong>Singabangsa</strong> merupakan salah satu Desa di wilayah Kecamatan Tenjo Kabupaten Bogor, dengan luas wilayah 303.262 Ha. Yang terbagi dalam 2 Dusun 4 Rukun Warga ( RW ), 15 Rukun Tetangga ( RT ). Jumlah Penduduk Desa Singabangsa sampai akhir bulan Desember Tahun 2019 tercatat sebanyak 3,998 Jiwa Dengan Jumlah Kartu Keluarga Sebanyak : 2,400 Kepala Keluarga (KK).</p>
                     <p>Dengan kondisi wilayah demikian pemanfaatan lahan sebagai dasar dari tunjuan pembangunan dan pemanfaatan Sumber Daya Alam (SDA) menjadi fokus utama dalam visi dan Misi Kepala Desa Singabangsa. Tidak lain, pemanfaatan tersebut bertujuan untuk kemaslahatan warga setempat yang juga diharapkan dapat mengakat perekonomian masyarakatnya</p>
                 </div>
@@ -113,34 +113,52 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="100">
-                        <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
-                            <img src="assets/images/news/news1.jpeg" class="rounded" width="100%" height="100%" alt="">
-                        </a>
+                        <div class="image-item">
+                            <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
+                                <img src="assets/images/news/news1.jpeg" class="img-shadow" width="100%" height="100%" alt="">
+                                <div class="overlay">Rapat Sosialisasi Penerapan Ganjil Genap</div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="200">
-                        <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
-                            <img src="assets/images/news/news1.jpeg" class="rounded" width="100%" height="100%" alt="">
-                        </a>
+                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="100">
+                        <div class="image-item">
+                            <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
+                                <img src="assets/images/news/news1.jpeg" class="img-shadow" width="100%" height="100%" alt="">
+                                <div class="overlay">Rapat Sosialisasi Penerapan Ganjil Genap</div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="300">
-                        <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
-                            <img src="assets/images/news/news1.jpeg" class="rounded" width="100%" height="100%" alt="">
-                        </a>
+                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="100">
+                        <div class="image-item">
+                            <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
+                                <img src="assets/images/news/news1.jpeg" class="img-shadow" width="100%" height="100%" alt="">
+                                <div class="overlay">Rapat Sosialisasi Penerapan Ganjil Genap</div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="400">
-                        <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
-                            <img src="assets/images/news/news1.jpeg" class="rounded" width="100%" height="100%" alt="">
-                        </a>
+                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="100">
+                        <div class="image-item">
+                            <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
+                                <img src="assets/images/news/news1.jpeg" class="img-shadow" width="100%" height="100%" alt="">
+                                <div class="overlay">Rapat Sosialisasi Penerapan Ganjil Genap</div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="500">
-                        <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
-                            <img src="assets/images/news/news1.jpeg" class="rounded" width="100%" height="100%" alt="">
-                        </a>
+                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="100">
+                        <div class="image-item">
+                            <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
+                                <img src="assets/images/news/news1.jpeg" class="img-shadow" width="100%" height="100%" alt="">
+                                <div class="overlay">Rapat Sosialisasi Penerapan Ganjil Genap</div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="600">
-                        <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
-                            <img src="assets/images/news/news1.jpeg" class="rounded" width="100%" height="100%" alt="">
-                        </a>
+                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="100">
+                        <div class="image-item">
+                            <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
+                                <img src="assets/images/news/news1.jpeg" class="img-shadow" width="100%" height="100%" alt="">
+                                <div class="overlay">Rapat Sosialisasi Penerapan Ganjil Genap</div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -264,7 +282,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="text-blue-900 font-weight-bold">Selengkapnya <i class="fas fa-angle-double-right"></i></a>
+                    <a href="agenda.php" class="text-blue-900 font-weight-bold">Selengkapnya <i class="fas fa-angle-double-right"></i></a>
                 </div>
             </div>
         </div>
