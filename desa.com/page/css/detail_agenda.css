@@ -1,0 +1,7 @@
+
+  @media (max-width: 768px) {
+    #detail_agenda img.img-detail {
+      width: 20rem;
+      height: 15rem;
+    }
+  }

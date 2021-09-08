@@ -37,6 +37,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/detail_agenda.css">
 
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -51,22 +52,21 @@
     <!-- navbar -->
     <?php require '../navbar.php' ?>
 
-    <section class="py-5">
+    <section id="detail_agenda" class="py-5">
         <div class="container pt-5">
             <h4 class="pb-4 text-center">AGENDA</h4>
             <div class="row">
                 <div class="col-md-8">
                     <div class="news-container">
-                        <div class="row news-item mb-8">
+                        <div class="row">
                             <div class="col-md-11 order-2 order-sm-2 order-md-1 order-lg-1 mb-3">
                                 <h5 class="text-justify">Bulan Bakti Pancakarsa</h5>
                                 <div class="mb-2 text-blue-900 font-weight-bold">
+                                    <small><i class="fas fa-user"></i> administrator</small> |
                                     <small><i class="far fa-clock"></i> 25 Agustus 2021</small>
                                 </div>
-                                <div class="mt-3 mb-3">
-                                    <span>
-                                        <img src="assets/images/news/news4.jpeg" class="detail-agenda-img" width="660" height="400" alt=""><br>
-                                    </span>
+                                <div class="text-center py-3">
+                                    <img src="assets/images/news/news4.jpeg" class="img-fluid img-detail" alt="">
                                 </div>
                                 <p class="text-justify">Bulan Bakti Pancakarsa merupakan upaya pemerintah daerah untuk menumbuhkembangkan dan melestarikan budaya gotong royong masyarakat Kabupaten Bogor.</p>
                                 <p class="text-justify">Program ini sebagai tindak lanjut atas arahan Bupati Bogor saat peletakan batu pertama Taman Pancakarsa pada 30 Agustus 2019 di Cibinong.</p>
