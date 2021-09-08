@@ -51,7 +51,7 @@
 <body>
     <!-- navbar -->
     <?php require '../navbar.php' ?>
- 
+
     <section id="kontak" class="py-5">
         <div class="container pt-5">
             <h4 class="pb-4 text-center">HUBUNGI KAMI</h4>
@@ -61,8 +61,9 @@
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.6097846337207!2d106.4657244140688!3d-6.314880963552579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e42089ec4a1b815%3A0x1337a097e04e30d2!2sKantor+Desa+Singabangsa!5e0!3m2!1sid!2sid!4v1516082446667" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                 </div>
-                <div class="col-lg-5 mb-4" data-aos="fade-up-left" data-aos-delay="200">
-                    <h4>Informasi dan Pelayanan</h4><hr>
+                <div class="col-lg-5 mb-4">
+                    <h4>Informasi dan Pelayanan</h4>
+                    <hr>
                     <p><strong>Kantor Kepala Desa</strong> - Singabangsa Rt. 004 Te. 002, Singabangsa, Tenjo, Bogor, Jawa Barat 16370</p>
                     <p><strong>Telpon</strong> - (123) 456-7890</p>
                     <p><strong>E-Mail</strong> - <a href="mailto:name@example.com">info@singabangsa.desa.id</a></p>
@@ -71,43 +72,44 @@
             </div>
             <div class="row">
                 <div class="col-lg-7 mb-7">
-                    <h5 class="pt-4">Kirim kritik, saran, dan keluhan Anda di bawah ini :</h5><hr>
+                    <h5 class="pt-4">Kirim kritik, saran, dan keluhan Anda di bawah ini :</h5>
+                    <hr>
                     <form role="form" method="POST" action="pages/prs_saran.php">
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <input type="hidden" class="form-control" value="<?php echo $newID; ?>" name="id_saran" required>
-                            <p class="help-block"></p>
+                        <div class="control-group form-group">
+                            <div class="controls">
+                                <input type="hidden" class="form-control" value="<?php echo $newID; ?>" name="id_saran" required>
+                                <p class="help-block"></p>
+                            </div>
                         </div>
-                    </div>
-			        <div class="control-group form-group">
-                        <div class="controls">
-                            <strong>*Nama Lengkap :</strong>
-                            <input type="text" class="form-control" name="nama_masy" onkeypress="return isAlphabetKey(event)" required>
-                            <p class="help-block"></p>
+                        <div class="control-group form-group">
+                            <div class="controls">
+                                <strong>*Nama Lengkap :</strong>
+                                <input type="text" class="form-control" name="nama_masy" onkeypress="return isAlphabetKey(event)" required>
+                                <p class="help-block"></p>
+                            </div>
                         </div>
-                    </div>
-			        <div class="control-group form-group">
-                        <div class="controls">
-                            <strong>*E-mail :</strong>
-                            <input type="email" class="form-control" name="email" placeholder="example@gmail.com" required>
-                            <p class="help-block"></p>
+                        <div class="control-group form-group">
+                            <div class="controls">
+                                <strong>*E-mail :</strong>
+                                <input type="email" class="form-control" name="email" placeholder="example@gmail.com" required>
+                                <p class="help-block"></p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <strong>*Nomor Telepon :</strong>
-                            <input type="text" class="form-control" name="notelp" onkeypress="return isNumberKey(event)" required>
+                        <div class="control-group form-group">
+                            <div class="controls">
+                                <strong>*Nomor Telepon :</strong>
+                                <input type="text" class="form-control" name="notelp" onkeypress="return isNumberKey(event)" required>
+                            </div>
                         </div>
-                    </div>
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <strong>*Isi :</strong>
-                            <textarea rows="7" cols="100" class="form-control" name="isi_saran" required></textarea>
+                        <div class="control-group form-group">
+                            <div class="controls">
+                                <strong>*Isi :</strong>
+                                <textarea rows="7" cols="100" class="form-control" name="isi_saran" required></textarea>
+                            </div>
                         </div>
-                    </div>
-			        <input type="hidden" name="tanggal" class="form-control" value=" <?php echo date('d-m-Y'); ?> " >
-                    <div id="success"></div>
-                        <button name="kirim_saran" type="submit"  class="btn btn-primary">Kirim</button>
+                        <input type="hidden" name="tanggal" class="form-control" value=" <?php echo date('d-m-Y'); ?> ">
+                        <div id="success"></div>
+                        <button name="kirim_saran" type="submit" class="btn btn-primary">Kirim</button>
                     </form>
                 </div>
             </div>

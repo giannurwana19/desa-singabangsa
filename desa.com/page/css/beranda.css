@@ -5,13 +5,13 @@
   object-fit: cover;
 }
 
-#gallery .row > * {
+/* #gallery .row > * {
   padding: 0;
 }
 
 .gallery-img {
   width: 100%;
-}
+} */
 
 .carousel {
   margin-top: 70px;
