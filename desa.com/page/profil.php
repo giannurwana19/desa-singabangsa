@@ -47,32 +47,11 @@
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg font-weight-bold navbar-dark bg-blue-900">
-        <div class="container">
-            <nav class="navbar navbar-dark bg-blue-900">
-                <a class="navbar-brand" href="#">
-                    <img src="../../images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-                    <span class="title-navbar"><span class="d-none d-sm-inline-block">DESA</span> SINGABANGSA</span>
-                </a>
-            </nav>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto">
-                    <a class="nav-link" href="beranda.php">Beranda</a>
-                    <a class="nav-link" href="profil.php">Profil</a>
-                    <a class="nav-link" href="agenda.php">Agenda</a>
-                    <a class="nav-link" href="galeri.php">Galeri</a>
-                    <a class="nav-link" href="panduan.php">Panduan</a>
-                    <a class="nav-link" href="kontak.php">Kontak</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <?php require '../navbar.php' ?>
 
+    <!-- profil desa -->
     <section id="profil-desa" class="py-5">
-        <div class="container pb-3">
+        <div class="container pb-3 mt-5">
             <h4 class="pb-5 text-center" data-aos="fade-top">PROFIL DESA SINGABANGSA</h4>
             <div class="row">
                 <div class="col-lg-5 pb-3 text-center" data-aos="fade-up" data-aos-delay="200">
@@ -98,15 +77,12 @@
                     <p>Jumlah Penduduk Desa Singabangsa sampai akhir bulan Desember Tahun 2017
                         tercatat sebanyak 3,998 Jiwa Dengan Jumlah Kartu Keluarga Sebanyak : 912 Kepala Keluarga (KK)<br>
                         Untuk melihat Grafik/Chard pertumbuhan penduduk Desa Singabangsa klik
-<<<<<<< Updated upstream
-                        <a href="index.php?page=statistik"><b><u>disini</u></b></a><br>
+                        <a href="statistik.php"><b><u>disini</u></b></a><br>
                     </p>
-=======
-                        <a href="statistik.php"><b><u>disini</u></b></a><br></p>
->>>>>>> Stashed changes
 
                 </div>
             </div>
+            <hr>
         </div>
 
         <div class="bg-light">
@@ -148,6 +124,7 @@
         </div>
     </section>
 
+    <!-- profil pemerintah -->
     <section id="profil-pemerintah">
         <div class="container pb-3">
             <h4 class="pb-5 text-center" data-aos="fade-top">PROFIL PEMERINTAHAN DESA SINGABANGSA</h4>
@@ -186,13 +163,13 @@
                 </div>
 
             </div>
+            <hr>
         </div>
 
         <div class="bg-light">
             <div class="container pt-3 pb-3">
                 <h5 class="pt-3 pb-3 text-center" data-aos="fade-top">VISI DAN MISI</h5>
-                <hr>
-                <div class="col-lg-12 pt-3" align="center" data-aos="fade-top">
+                <div class="col-lg-12 pt-3 pb-3" align="center" data-aos="fade-top">
                     <p align="justify">
                         <b>1. Visi</b><br>
                         Visi pembangunan Desa Singabangsa yaitu terwujudanya masyarakat yang bermartabat dan bertaqwa menuju sejahtera.<br><br>
@@ -207,6 +184,7 @@
                         7) Mewujudkan pembangunan dengan kondisi lingkungan yang bersih, sehat, produktif dan lestari.<br>
                     </p>
                 </div>
+                <hr>
             </div>
         </div>
 
@@ -248,6 +226,8 @@
 
     </section>
 
+
+    <?php require '../footer.php' ?>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>

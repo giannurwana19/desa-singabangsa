@@ -51,7 +51,7 @@
     <?php require '../navbar.php' ?>
 
     <section class="py-5">
-        <div class="container mt-5" data-aos="fade-top">
+        <div class="container mt-5">
             <h4 class="text-center mt-4">PANDUAN ADMINISTRASI PENDUDUK</h4>
             <h5 class="text-center mt-4 font-weight-normal">Pilih kategori panduan dibawah ini:</h5>
 
@@ -67,12 +67,12 @@
         </div>
 
     <!-- panduan file download -->
-        <div class="container" align="center"  data-aos="fade-top">
-            <h5>Panduan Adm. Kartu Keluarga</h5>
+        <div class="container" align="center" data-aos="fade-top">
+            <h5>Panduan Adm. Surat Kematian</h5>
             <br>
-            <img class="img-fluid" src="assets/images/panduan/kk.png"><br><br>
+            <img class="img-fluid" src="assets/images/panduan/skem.png"><br><br>
             Download file paduan
-            <a href="assets/doc/panduan/kk.docx" download> <u><b>disini</b></u> </a>.
+            <a href="assets/doc/panduan/skem.docx" download> <u><b>disini</b></u> </a>.
             <hr> 
         </div>
     </section>

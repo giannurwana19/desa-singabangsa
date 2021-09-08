@@ -51,7 +51,7 @@
     <?php require '../navbar.php' ?>
 
     <section class="py-5">
-        <div class="container mt-5" data-aos="fade-top">
+        <div class="container mt-5">
             <h4 class="text-center mt-4">PANDUAN ADMINISTRASI PENDUDUK</h4>
             <h5 class="text-center mt-4 font-weight-normal">Pilih kategori panduan dibawah ini:</h5>
 
