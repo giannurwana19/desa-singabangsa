@@ -11,19 +11,3 @@
     width: 100% !important;
     height: 100% !important;
 }
-
-.btn-kirim {
-    padding: 10px 20px;
-    position: relative;
-    color: #fff;
-    background-color: #2196f3;
-    top: 20px;
-    border-radius: 5px;
-    font-size: 14px;
-    transition: all 200ms;
-    border: none;
-  }
-  
-  .btn-kirim:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  }

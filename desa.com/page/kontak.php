@@ -61,7 +61,7 @@
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.6097846337207!2d106.4657244140688!3d-6.314880963552579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e42089ec4a1b815%3A0x1337a097e04e30d2!2sKantor+Desa+Singabangsa!5e0!3m2!1sid!2sid!4v1516082446667" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                 </div>
-                <div class="col-lg-5 mb-4" data-aos="zoom-in-left" data-aos-delay="200">
+                <div class="col-lg-5 mb-4" data-aos="fade-up-left" data-aos-delay="200">
                     <h4>Informasi dan Pelayanan</h4><hr>
                     <p><strong>Kantor Kepala Desa</strong> - Singabangsa Rt. 004 Te. 002, Singabangsa, Tenjo, Bogor, Jawa Barat 16370</p>
                     <p><strong>Telpon</strong> - (123) 456-7890</p>
@@ -69,7 +69,7 @@
                     <p><strong>Waktu Pelayanan</strong> - Senin - Jumat Pukul 09:00 sampai 17:00 WIB.</p>
                 </div>
             </div>
-            <div class="row" data-aos="zoom-out-right" data-aos-delay="200">
+            <div class="row">
                 <div class="col-lg-7 mb-7">
                     <h5 class="pt-4">Kirim kritik, saran, dan keluhan Anda di bawah ini :</h5><hr>
                     <form role="form" method="POST" action="pages/prs_saran.php">
@@ -107,7 +107,7 @@
                     </div>
 			        <input type="hidden" name="tanggal" class="form-control" value=" <?php echo date('d-m-Y'); ?> " >
                     <div id="success"></div>
-                        <button name="kirim_saran" type="submit"  class="btn-kirim">Kirim</button>
+                        <button name="kirim_saran" type="submit"  class="btn btn-lg btn-primary">Kirim</button>
                     </form>
                 </div>
             </div>
