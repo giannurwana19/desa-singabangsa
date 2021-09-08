@@ -52,7 +52,7 @@
     <!-- profil desa -->
     <section id="profil-desa" class="py-5">
         <div class="container pb-3 mt-5">
-            <h4 class="pb-5 text-center" data-aos="fade-top">PROFIL DESA SINGABANGSA</h4>
+            <h4 class="pb-5 text-center">PROFIL DESA SINGABANGSA</h4>
             <div class="row">
                 <div class="col-lg-5 pb-3 text-center" data-aos="fade-up" data-aos-delay="200">
                     <img src="../../images/peta.png" class="img-fluid mr-3" alt="peta" width="400">
@@ -88,10 +88,10 @@
 
         <div class="bg-light">
             <div class="container pt-3">
-                <h5 class="pt-3 pb-3 text-center" data-aos="fade-top">Keadaan Fisik/Geografi Desa</h5>
+                <h5 class="pt-3 pb-3 text-center">Keadaan Fisik/Geografi Desa</h5>
                 <div class="row">
 
-                    <div class="col-md-5 py-3 text-justify" data-aos="fade-right" data-aos-delay="200">
+                    <div class="col-md-5 py-3 text-justify" data-aos="fade">
                         <p>Pemanfaatan Lahan/Penggunaan tanah di Desa Singabangsa sebagai berikut:<br>
                             - Perumahan/Pemukiman dan Pekarangan : 127.674 Ha<br>
                             - Sawah : 83 Ha<br>
@@ -113,7 +113,7 @@
                             - Setu : 3,5 Ha</p>
                     </div>
 
-                    <div class="col-md-7 py-3" data-aos="fade-left">
+                    <div class="col-md-7 py-3" data-aos="fade">
                         <div class="text-center">
                             <img src="assets/images/profil/bg.jpg" class="img-fluid" alt="desa">
                         </div>
@@ -128,9 +128,9 @@
     <!-- profil pemerintah -->
     <section id="profil-pemerintah">
         <div class="container pb-3">
-            <h4 class="pb-5 text-center" data-aos="fade-top">PROFIL PEMERINTAHAN DESA SINGABANGSA</h4>
+            <h4 class="pb-5 text-center">PROFIL PEMERINTAHAN DESA SINGABANGSA</h4>
             <div class="row">
-                <div class="col-lg-12 pt-3 pb-3 text-center" data-aos="fade-top">
+                <div class="col-lg-12 pt-3 pb-3 text-center" data-aos="fade">
                     <img class="img-fluid rounded mb-4" src="../../images/logo.png" alt="" width="100" height="200">
                     <a href="index.php?page=lamp_perdes" class="text-center">
                         <h5>Perundang-Undangan Desa</h5>
@@ -143,10 +143,10 @@
                         struktur organisasi yang berikut:</p>
                     <hr>
                 </div>
-                <div class="col-lg-12 pt-3 text-center" data-aos="fade-top">
+                <div class="col-lg-12 pt-3 text-center">
                     <h5>Struktur Organisasi Desa Singabangsa</h5>
-                    <img class="img-fluid rounded mb-4" src="assets/images/profil/struktur.png" alt="">
-                    <p class="text-center">
+                    <img class="img-fluid rounded mb-4" src="assets/images/profil/struktur.png" alt="" data-aos="fade">
+                    <p class="text-center" data-aos="fade">
                         <b>1. KELEMBAGAAN DESA</b><br>
                         - Kepala Desa : JAYA JUNAEDI<br>
                         - Sekretaris Desa : MADSA’I SUNARDI’SE<br>
@@ -169,8 +169,8 @@
 
         <div class="bg-light">
             <div class="container pt-3 pb-3">
-                <h5 class="pt-3 pb-3 text-center" data-aos="fade-top">VISI DAN MISI</h5>
-                <div class="col-lg-12 pt-3 pb-3 text-center" data-aos="fade-top">
+                <h5 class="pt-3 pb-3 text-center">VISI DAN MISI</h5>
+                <div class="col-lg-12 pt-3 pb-3 text-center" data-aos="fade">
                     <p class="text-justify">
                         <b>1. Visi</b><br>
                         Visi pembangunan Desa Singabangsa yaitu terwujudanya masyarakat yang bermartabat dan bertaqwa menuju sejahtera.<br><br>
@@ -193,12 +193,12 @@
     <section id="lmd">
         <div class="container pb-3 pt-2">
             <div class="row">
-                <div class="col-lg-12 pt-3 text-center" data-aos="fade-top">
+                <div class="col-lg-12 pt-3 text-center">
                     <h5 class="pb-3">Lembaga Masyarakat Desa</h5>
                 </div>
             </div>
         </div>
-        <div class="container pb-3 pt-2" data-aos="fade-top">
+        <div class="container pb-3 pt-2" data-aos="fade">
             <div class="row text-center">
                 <div class="col-6 col-lg-3">
                     <div class="thumbnail">

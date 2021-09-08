@@ -1,5 +1,5 @@
 <!-- panduan file download -->
-<div class="container text-center" data-aos="fade-top">
+<div class="container text-center" data-aos="fade">
     <h5>Panduan Adm. Akte</h5>
     <br>
     <div class="row mb-3">
