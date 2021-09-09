@@ -47,7 +47,7 @@
 
 <body>
     <!-- navbar -->
-    <?php require '../navbar.php' ?>
+    <?php include 'navbar.php' ?>
 
     <!-- profil desa -->
     <section id="profil-desa" class="py-5">
@@ -55,7 +55,7 @@
             <h4 class="text-center mb-4">PROFIL DESA SINGABANGSA</h4>
             <div class="row">
                 <div class="col-lg-5 pb-3 text-center" data-aos="fade">
-                    <img src="../../images/PETA.png" class="img-fluid mr-3" alt="peta" width="400">
+                    <img src="../images/PETA.png" class="img-fluid mr-3" alt="peta" width="400">
                 </div>
                 <div class="col-lg-7" data-aos="fade">
 
@@ -78,7 +78,7 @@
                         tercatat sebanyak 3,998 Jiwa Dengan Jumlah Kartu Keluarga Sebanyak : 912 Kepala Keluarga (KK)<br>
                         Untuk melihat Grafik/Chard pertumbuhan penduduk Desa Singabangsa klik
                         <!-- <a href="index.php?page=statistik"><b><u>disini</u></b></a><br> -->
-                        <a href="statistik.php"><b><u>disini</u></b></a><br>
+                        <a href="index.php?page=statistik"><b><u>disini</u></b></a><br>
                     </p>
 
                 </div>
@@ -115,7 +115,7 @@
 
                     <div class="col-md-7 py-3" data-aos="fade">
                         <div class="text-center">
-                            <img src="../../images/desa/bg.JPG" class="img-fluid" alt="desa">
+                            <img src="../images/desa/bg.JPG" class="img-fluid" alt="desa">
                         </div>
                     </div>
 
@@ -131,7 +131,7 @@
             <h4 class="pb-5 text-center">PROFIL PEMERINTAHAN DESA SINGABANGSA</h4>
             <div class="row">
                 <div class="col-lg-12 pt-3 pb-3 text-center" data-aos="fade">
-                    <img class="img-fluid rounded mb-4" src="../../images/logo.png" alt="" width="100" height="200">
+                    <img class="img-fluid rounded mb-4" src="../images/logo.png" alt="" width="100" height="200">
                     <a href="index.php?page=lamp_perdes" class="text-center">
                         <h5>Perundang-Undangan Desa</h5>
                     </a>
@@ -145,7 +145,7 @@
                 </div>
                 <div class="col-lg-12 pt-3 text-center">
                     <h5>Struktur Organisasi Desa Singabangsa</h5>
-                    <img class="img-fluid rounded mb-4" src="../../images/struktur.png" alt="" data-aos="fade">
+                    <img class="img-fluid rounded mb-4" src="../images/struktur.png" alt="" data-aos="fade">
                     <p class="text-center" data-aos="fade">
                         <b>1. KELEMBAGAAN DESA</b><br>
                         - Kepala Desa : JAYA JUNAEDI<br>
@@ -203,31 +203,31 @@
                 <div class="col-6 col-lg-3">
                     <div class="thumbnail">
                         <h6 class="mb-4">LINMAS</h6>
-                        <img class="mb-4" src="../../doc_lembaga_masy/linmas.png" class="img-responsive" width="100"><br>
+                        <img class="mb-4" src="../doc_lembaga_masy/linmas.png" class="img-responsive" width="100"><br>
                         <!-- <a href="index.php?page=lamp_linmas">Lihat dokumen lampiran</a> -->
                         <!-- <a href="profil.php?lamp=linmas">Lihat dokumen lampiran</a> -->
-                        <a href="lamp_linmas.php">Lihat dokumen lampiran</a>
+                        <a href="index.php?page=lamp_linmas" target="_blank">Lihat dokumen lampiran</a>
                     </div>
                 </div>
                 <div class="col-6 col-lg-3">
                     <div class="thumbnail">
                         <h6 class="mb-4">LPMD</h6>
-                        <img class="mb-4" src="../../doc_lembaga_masy/lpmd.jpg" class="img-responsive" width="100"><br>
-                        <a href="lamp_lpmd.php">Lihat dokumen lampiran</a>
+                        <img class="mb-4" src="../doc_lembaga_masy/lpmd.jpg" class="img-responsive" width="100"><br>
+                        <a href="index.php?page=lamp_lpmd" target="_blank">Lihat dokumen lampiran</a>
                     </div>
                 </div>
                 <div class="col-6 col-lg-3">
                     <div class="thumbnail">
                         <h6 class="mb-4">GAPOKTAN</h6>
-                        <img class="mb-4" src="../../doc_lembaga_masy/gapoktan.jpg" class="img-responsive" width="100"><br>
-                        <a href="lamp_gapoktan.php">Lihat dokumen lampiran</a>
+                        <img class="mb-4" src="../doc_lembaga_masy/gapoktan.jpg" class="img-responsive" width="100"><br>
+                        <a href="index.php?page=lamp_gapoktan" target="_blank">Lihat dokumen lampiran</a>
                     </div>
                 </div>
                 <div class="col-6 col-lg-3">
                     <div class="thumbnail">
                         <h6 class="mb-4">RT & RW</h6>
-                        <img class="mb-4" src="../../doc_lembaga_masy/rt.jpg" class="img-responsive" width="100"><br>
-                        <a href="lamp_rt.php">Lihat dokumen lampiran</a>
+                        <img class="mb-4" src="../doc_lembaga_masy/rt.jpg" class="img-responsive" width="100"><br>
+                        <a href="index.php?page=lamp_rt" target="_blank">Lihat dokumen lampiran</a>
                     </div>
                 </div>
             </div>
@@ -259,7 +259,7 @@
     </section>
 
 
-    <?php require '../footer.php' ?>
+    <?php include 'footer.php' ?>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>

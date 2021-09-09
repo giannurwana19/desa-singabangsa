@@ -1,5 +1,5 @@
 <?php
-include "../../koneksi/koneksi.php";
+include "../koneksi/koneksi.php";
 ?>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 

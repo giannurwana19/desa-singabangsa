@@ -56,7 +56,7 @@
 
 <body>
     <!-- navbar -->
-    <?php require '../navbar.php' ?>
+    <?php include 'navbar.php' ?>
 
     <!-- carousel -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -67,13 +67,13 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="../../images/desa/s4.jpg" class="d-block" alt="...">
+                <img src="../images/desa/s4.jpg" class="d-block" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="../../images/desa/py1.png" class="d-block" alt="...">
+                <img src="../images/desa/py1.png" class="d-block" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="../../images/desa/UU.png" class="d-block" alt="...">
+                <img src="../images/desa/UU.png" class="d-block" alt="...">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -92,7 +92,7 @@
             <div class="row">
                 <div class="col-md-3 py-3" data-aos="zoom-in">
                     <div class="text-center">
-                        <img src="../../images/logo.png" class="img-fluid img-logo" alt="logo">
+                        <img src="../images/logo.png" class="img-fluid img-logo" alt="logo">
                     </div>
                 </div>
                 <div class="col-md-9 py-3 text-justify" data-aos="zoom-in" data-aos-delay="200">
@@ -288,7 +288,7 @@
         </div>
     </section>
 
-    <?php require '../footer.php' ?>
+    <?php include 'footer.php' ?>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>

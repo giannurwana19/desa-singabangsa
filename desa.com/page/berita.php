@@ -50,7 +50,7 @@
 
 <body>
     <!-- navbar -->
-    <?php require '../navbar.php' ?>
+    <?php include 'navbar.php' ?>
     <section class="py-5">
         <div class="container mt-5">
             <h4 class="text-center">BERITA TERKINI</h4>
@@ -243,7 +243,7 @@
     </section>
 
 
-    <?php require '../footer.php' ?>
+    <?php include 'footer.php' ?>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>

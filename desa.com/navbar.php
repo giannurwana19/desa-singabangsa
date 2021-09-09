@@ -1,8 +1,8 @@
     <nav class="navbar navbar-expand-lg font-weight-bold navbar-dark bg-blue-900 fixed-top">
         <div class="container">
             <nav class="navbar navbar-dark bg-blue-900">
-                <a class="navbar-brand" href="#">
-                    <img src="../../images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                <a class="navbar-brand" href="index.php?page=beranda">
+                    <img src="../images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
                     <span class="title-navbar"><span class="d-none d-sm-inline-block">DESA</span> SINGABANGSA</span>
                 </a>
             </nav>
@@ -11,13 +11,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto">
-                    <a class="nav-link text-uppercase" href="beranda.php">Beranda</a>
-                    <a class="nav-link text-uppercase" href="profil.php">Profil</a>
-                    <a class="nav-link text-uppercase" href="berita.php">Berita</a>
-                    <a class="nav-link text-uppercase" href="agenda.php">Agenda</a>
-                    <a class="nav-link text-uppercase" href="galeri.php">Galeri</a>
-                    <a class="nav-link text-uppercase" href="panduan.php">Panduan</a>
-                    <a class="nav-link text-uppercase" href="kontak.php">Kontak</a>
+                    <a class="nav-link text-uppercase" href="index.php?page=beranda">Beranda</a>
+                    <a class="nav-link text-uppercase" href="index.php?page=profil">Profil</a>
+                    <a class="nav-link text-uppercase" href="index.php?page=berita">Berita</a>
+                    <a class="nav-link text-uppercase" href="index.php?page=agenda">Agenda</a>
+                    <a class="nav-link text-uppercase" href="index.php?page=galeri">Galeri</a>
+                    <a class="nav-link text-uppercase" href="index.php?page=panduan">Panduan</a>
+                    <a class="nav-link text-uppercase" href="index.php?page=kontak">Kontak</a>
                 </div>
             </div>
         </div>

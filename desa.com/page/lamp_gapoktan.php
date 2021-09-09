@@ -45,28 +45,28 @@
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <title>Starter - Desa Singabangsa</title>
+    <title>Lampiran GAPOKTAN - Desa Singabangsa</title>
 </head>
 
 <body>
     <!-- navbar -->
-    <?php require '../navbar.php' ?>
+    <?php include 'navbar.php' ?>
 
     <!-- lampiran -->
     <section class="py-5">
         <div class="container pt-5" data-aos="fade-top">
-        <a href="profil.php#lmd">Kembali</a>
+            <a href="profil.php#lmd">Kembali</a>
             <h5 class="text-center mb-4 mt-4">Dokumen Lampiran GAPOKTAN</h5>
             <div class="row mb-3">
                 <div class="col">
-                <iframe src="../../doc_lembaga_masy/gapoktan.pdf" style="width:100%; height:600px;"></iframe>
+                    <iframe src="../doc_lembaga_masy/gapoktan.pdf" style="width:100%; height:600px;"></iframe>
                 </div>
             </div>
             <hr>
         </div>
     </section>
 
-    <?php require '../footer.php' ?>
+    <?php include 'footer.php' ?>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>

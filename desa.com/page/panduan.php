@@ -48,7 +48,7 @@
 
 <body>
     <!-- navbar -->
-    <?php require '../navbar.php' ?>
+    <?php include 'navbar.php' ?>
 
     <section class="py-5">
         <div class="container mt-5">
@@ -57,11 +57,11 @@
 
             <!-- category -->
             <div class="category text-center mt-4">
-                <a href="panduan.php?kategori=kk"><button type="button" class="btn btn-outline-primary">Kartu Keluarga</button></a>
-                <a href="panduan.php?kategori=ektp"><button type="button" class="btn btn-outline-primary">E-KTP</button></a>
-                <a href="panduan.php?kategori=akte"><button type="button" class="btn btn-outline-primary">Akte</button></a>
-                <a href="panduan.php?kategori=skck"><button type="button" class="btn btn-outline-primary">SKCK</button></a>
-                <a href="panduan.php?kategori=skem"><button type="button" class="btn btn-outline-primary">Surat Kematian</button></a>
+                <a href="index.php?page=panduan&kategori=kk"><button type="button" class="btn btn-outline-primary">Kartu Keluarga</button></a>
+                <a href="index.php?page=panduan&kategori=ektp"><button type="button" class="btn btn-outline-primary">E-KTP</button></a>
+                <a href="index.php?page=panduan&kategori=akte"><button type="button" class="btn btn-outline-primary">Akte</button></a>
+                <a href="index.php?page=panduan&kategori=skck"><button type="button" class="btn btn-outline-primary">SKCK</button></a>
+                <a href="index.php?page=panduan&kategori=skem"><button type="button" class="btn btn-outline-primary">Surat Kematian</button></a>
             </div>
             <hr>
         </div>
@@ -94,7 +94,7 @@
     </section>
 
     <!-- footer page-->
-    <?php require '../footer.php' ?>
+    <?php include 'footer.php' ?>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>

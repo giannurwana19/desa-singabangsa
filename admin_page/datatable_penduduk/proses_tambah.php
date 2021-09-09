@@ -12,7 +12,7 @@
  $nm_belakang = $data->val($i,3);
  
 //setelah data dibaca, sisipkan ke dalam tabel pegawai
- $query = mysqli_query($conn,"INSERT INTO PEGAWAI values ('$nip','$nm_depan','$nm_belakang')";
+ $query = mysqli_query($conn,"INSERT INTO PEGAWAI values ('$nip','$nm_depan','$nm_belakang')");
  $hasil = mysqli_query($conn,$query);
  
 //menambah counter jika berhasil atau gagal

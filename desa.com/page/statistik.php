@@ -48,7 +48,7 @@
 
 <body>
     <!-- navbar -->
-    <?php require '../navbar.php' ?>
+    <?php include 'navbar.php' ?>
 
     <section class="py-5">
         <div class="container pt-5">
@@ -64,34 +64,12 @@
                         <a href="index.php?page=statistik&kategori=umur" class="btn btn-outline-primary">Umur</a>
                         <a href="index.php?page=statistik&kategori=jenkel" class="btn btn-outline-primary">Jenis Kelamin</a>
                         <a href="index.php?page=statistik&kategori=pendidikan" class="btn btn-outline-primary">Pendidikan</a></b> -->
-                        <a href="statistik.php?page=statistik&kategori=agama" class="btn btn-outline-primary btn-sm mb-2">Agama</a>
-                        <a href="statistik.php?page=statistik&kategori=umur" class="btn btn-outline-primary btn-sm mb-2">Umur</a>
-                        <a href="statistik.php?page=statistik&kategori=jenkel" class="btn btn-outline-primary btn-sm mb-2">Jenis Kelamin</a>
-                        <a href="statistik.php?page=statistik&kategori=pendidikan" class="btn btn-outline-primary btn-sm mb-2">Pendidikan</a></b>
+                        <a href="index.php?page=statistik&kategori=agama" class="btn btn-outline-primary btn-sm mb-2">Agama</a>
+                        <a href="index.php?page=statistik&kategori=umur" class="btn btn-outline-primary btn-sm mb-2">Umur</a>
+                        <a href="index.php?page=statistik&kategori=jenkel" class="btn btn-outline-primary btn-sm mb-2">Jenis Kelamin</a>
+                        <a href="index.php?page=statistik&kategori=pendidikan" class="btn btn-outline-primary btn-sm mb-2">Pendidikan</a></b>
                     </div>
                 </div>
-                <!-- <?php
-                        if (isset($_GET['kategori'])) {
-                            switch ($_GET['kategori']) {
-                                case 'agama':
-                                    include 'page/statistik_pend_agama.php';
-                                    break;
-                                case 'umur':
-                                    include 'page/statistik_pend_umur.php';
-                                    break;
-                                case 'jenkel':
-                                    include 'page/statistik_pend_jenkel.php';
-                                    break;
-                                case 'pendidikan':
-                                    include 'page/statistik_pend_pendidikan.php';
-                                    break;
-                                default:
-                                    include 'page/404.php';
-                            }
-                        } else {
-                            include 'pages/statistik_pend_agama.php';
-                        }
-                        ?> -->
 
                 <div class="chart-container mt-4">
                     <?php
@@ -122,7 +100,7 @@
         </div>
     </section>
 
-    <?php require '../footer.php' ?>
+    <?php include 'footer.php' ?>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
