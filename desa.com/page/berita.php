@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,161 +39,139 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/berita.css">
 
-     <!-- font awesome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- aos  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>Berita - Desa Singabangsa</title>
 </head>
+
 <body>
     <!-- navbar -->
     <?php require '../navbar.php' ?>
     <section class="py-5">
-        <div class="container">
-             <h4 class="text-center">BERITA TERKINI</h4>
+        <div class="container mt-5">
+            <h4 class="text-center">BERITA TERKINI</h4>
 
-    <form class="form-inline mt-4">
-        <input class="form-control mr-sm-2" type="search" placeholder="Cari disini" aria-label="Search">
-        <button class="btn bg-blue-900 my-2 my-sm-0 text-white" type="submit"><i class="fas fa-search text-white"></i> Cari</button>
-    </form>
-
-    <hr>
-        <div class="row">
-        <div class="col-md-8">
-            <div class="row" data-aos="fade-down">
-                <div class="col-md-11 d-flex flex-wrap">
-                <div class="news-card">
-                <div class="card my-4 mx-2" style="width: 18rem;">
-                <img src="./assets/images/news/news1.jpeg" class="card-img-top" alt="news-image">
-                <div class="card-body">
-                <a href="detail_berita.php" class="text-reset">
-                <span class="text-sm font-weight-regular">Optimalkan Sosialisasi Penerapan Ganjil Genap Kawasan Puncak</span>
-                </a>
-                <div class="mt-2 font-weight-bold">
-                    <ol>
-                         <li>
-                             <small class="text-blue-900"><i class="far fa-clock text-blue-900 "></i> 27 September 2021</small>
-                            </li>
-                        <li>
-                            <small class="text-blue-900"><i class="fas fa-user text-blue-900 "></i> administrator</small>
-                        </li>
-                    </ol>
-                </div>
-                </div>
+            <div class="row mt-3">
+                <div class="col-lg-4">
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" class="form-control form-control-sm" placeholder="Cari Berita..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-primary btn-sm" type="button" id="button-addon2">Cari</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
 
-            <div class="news-card">
-                <div class="card my-4 mx-2" style="width: 18rem;">
-                <img src="./assets/images/news/news1.jpeg" class="card-img-top" alt="news-image">
-                <div class="card-body">
-                <a href="detail_berita.php" class="text-reset">
-                <span class="text-sm font-weight-regular">Optimalkan Sosialisasi Penerapan Ganjil Genap Kawasan Puncak</span>
-                </a>
-                <div class="mt-2 font-weight-bold">
-                    <ol>
-                         <li>
-                             <small class="text-blue-900"><i class="far fa-clock text-blue-900 "></i> 27 September 2021</small>
-                            </li>
-                        <li>
-                            <small class="text-blue-900"><i class="fas fa-user text-blue-900 "></i>     administrator</small>
-                        </li>
-                    </ol>
+            <hr>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-lg-6 mb-4">
+                            <div class="news-card">
+                                <div class="card">
+                                    <img src="./assets/images/news/news1.jpeg" class="card-img-top" alt="news-image">
+                                    <div class="card-body">
+                                        <a href="detail_berita.php" class="text-reset">
+                                            <h6 class="text-justify text-blue-900">Optimalkan Sosialisasi Penerapan Ganjil Genap Kawasan Puncak</h6>
+                                        </a>
+                                        <div>
+                                            <small class="text-blue-900"><i class="far fa-clock text-blue-900 "></i> 27 September 2021</small>
+                                            <small class="text-blue-900"><i class="fas fa-user text-blue-900 "></i> administrator</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="news-card">
+                                <div class="card">
+                                    <img src="./assets/images/news/news1.jpeg" class="card-img-top" alt="news-image">
+                                    <div class="card-body">
+                                        <a href="detail_berita.php" class="text-reset">
+                                            <h6 class="text-justify text-blue-900">Optimalkan Sosialisasi Penerapan Ganjil Genap Kawasan Puncak</h6>
+                                        </a>
+                                        <div>
+                                            <small class="text-blue-900"><i class="far fa-clock text-blue-900 "></i> 27 September 2021</small>
+                                            <small class="text-blue-900"><i class="fas fa-user text-blue-900 "></i> administrator</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="news-card">
+                                <div class="card">
+                                    <img src="./assets/images/news/news1.jpeg" class="card-img-top" alt="news-image">
+                                    <div class="card-body">
+                                        <a href="detail_berita.php" class="text-reset">
+                                            <h6 class="text-justify text-blue-900">Optimalkan Sosialisasi Penerapan Ganjil Genap Kawasan Puncak</h6>
+                                        </a>
+                                        <div>
+                                            <small class="text-blue-900"><i class="far fa-clock text-blue-900 "></i> 27 September 2021</small>
+                                            <small class="text-blue-900"><i class="fas fa-user text-blue-900 "></i> administrator</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="news-card">
+                                <div class="card">
+                                    <img src="./assets/images/news/news1.jpeg" class="card-img-top" alt="news-image">
+                                    <div class="card-body">
+                                        <a href="detail_berita.php" class="text-reset">
+                                            <h6 class="text-justify text-blue-900">Optimalkan Sosialisasi Penerapan Ganjil Genap Kawasan Puncak</h6>
+                                        </a>
+                                        <div>
+                                            <small class="text-blue-900"><i class="far fa-clock text-blue-900 "></i> 27 September 2021</small>
+                                            <small class="text-blue-900"><i class="fas fa-user text-blue-900 "></i> administrator</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="news-card">
+                                <div class="card">
+                                    <img src="./assets/images/news/news1.jpeg" class="card-img-top" alt="news-image">
+                                    <div class="card-body">
+                                        <a href="detail_berita.php" class="text-reset">
+                                            <h6 class="text-justify text-blue-900">Optimalkan Sosialisasi Penerapan Ganjil Genap Kawasan Puncak</h6>
+                                        </a>
+                                        <div>
+                                            <small class="text-blue-900"><i class="far fa-clock text-blue-900 "></i> 27 September 2021</small>
+                                            <small class="text-blue-900"><i class="fas fa-user text-blue-900 "></i> administrator</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="news-card">
+                                <div class="card">
+                                    <img src="./assets/images/news/news1.jpeg" class="card-img-top" alt="news-image">
+                                    <div class="card-body">
+                                        <a href="detail_berita.php" class="text-reset">
+                                            <h6 class="text-justify text-blue-900">Optimalkan Sosialisasi Penerapan Ganjil Genap Kawasan Puncak</h6>
+                                        </a>
+                                        <div>
+                                            <small class="text-blue-900"><i class="far fa-clock text-blue-900 "></i> 27 September 2021</small>
+                                            <small class="text-blue-900"><i class="fas fa-user text-blue-900 "></i> administrator</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                </div>
-                </div>
-            </div>
-
-            <div class="news-card">
-            <div class="card my-4 mx-2" style="width: 18rem;">
-                <img src="./assets/images/news/news1.jpeg" class="card-img-top" alt="news-image">
-                <div class="card-body">
-                <a href="detail_berita.php" class="text-reset">
-                <span class="text-sm font-weight-regular">Optimalkan Sosialisasi Penerapan Ganjil Genap Kawasan Puncak</span>
-                </a>
-                <div class="mt-2 font-weight-bold">
-                    <ol>
-                        <li>
-                            <small class="text-blue-900"><i class="far fa-clock text-blue-900 "></i> 27 September 2021</small>
-                        </li>
-                        <li>
-                            <small class="text-blue-900"><i class="fas fa-user text-blue-900 "></i> administrator</small>
-                        </li>
-                    </ol>
-                </div>
-                </div>
-                </div>
-            </div>
-
-            <div class="news-card">
-                <div class="card my-4 mx-2" style="width: 18rem;">
-                <img src="./assets/images/news/news1.jpeg" class="card-img-top" alt="news-image">
-                <div class="card-body">
-                <a href="detail_berita.php" class="text-reset">
-                <span class="text-sm font-weight-regular">Optimalkan Sosialisasi Penerapan Ganjil Genap Kawasan Puncak</span>
-                </a>
-                <div class="mt-2 font-weight-bold">
-                    <ol>
-                        <li>
-                            <small class="text-blue-900"><i class="far fa-clock text-blue-900 "></i> 27 September 2021</small>
-                        </li>
-                        <li>
-                            <small class="text-blue-900"><i class="fas fa-user text-blue-900 "></i> administrator</small>
-                        </li>
-                    </ol>        
-                </div>
-                </div>
-                </div>
-            </div>
-
-            <div class="news-card">
-                <div class="card my-4 mx-2" style="width: 18rem;">
-                <img src="./assets/images/news/news1.jpeg" class="card-img-top" alt="news-image">
-                <div class="card-body">
-                <a href="detail_berita.php" class="text-reset">
-                <span class="text-sm font-weight-regular">Optimalkan Sosialisasi Penerapan Ganjil Genap Kawasan Puncak</span>
-                </a>
-                <div class="mt-2 font-weight-bold">
-                    <ol>
-                         <li>
-                             <small class="text-blue-900"><i class="far fa-clock text-blue-900 "></i> 27 September 2021</small>
-                            </li>
-                        <li>
-                            <small class="text-blue-900"><i class="fas fa-user text-blue-900 "></i> administrator</small>
-                        </li>
-                    </ol>        
-                </div>
-                </div>
-                </div>
-            </div>
-
-            <div class="news-card">
-                <div class="card my-4 mx-2" style="width: 18rem;">
-                <img src="./assets/images/news/news1.jpeg" class="card-img-top" alt="news-image">
-                <div class="card-body">
-                <a href="detail_berita.php" class="text-reset">
-                <span class="text-sm font-weight-regular">Optimalkan Sosialisasi Penerapan Ganjil Genap Kawasan Puncak</span>
-                </a>
-                <div class="mt-2 font-weight-bold">
-                    <ol>
-                        <li>
-                            <small class="text-blue-900"><i class="far fa-clock text-blue-900 "></i> 27 September 2021</small>
-                        </li>
-                        <li>
-                            <small class="text-blue-900"><i class="fas fa-user text-blue-900 "></i> administrator</small>
-                        </li>
-                    </ol>
-                </div>
-                </div>
-            </div>
-                </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-               <h4 class="mb-3">Agenda</h4>
+                <div class="col-md-4">
+                    <h4 class="mb-3">Agenda</h4>
                     <div class="agenda">
                         <div class="row mb-2">
                             <div class="col">
@@ -257,19 +236,20 @@
                     </div>
                     <a href="#" class="text-blue-900 font-weight-bold">Selengkapnya <i class="fas fa-angle-double-right"></i></a>
                 </div>
-        </div>
+            </div>
         </div>
         </div>
         </div>
     </section>
-      
-  
-        <?php require '../footer.php' ?>
 
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="js/index.js"></script>
+    <?php require '../footer.php' ?>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/index.js"></script>
 </body>
+
 </html>

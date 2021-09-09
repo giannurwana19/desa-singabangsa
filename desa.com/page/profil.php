@@ -52,12 +52,12 @@
     <!-- profil desa -->
     <section id="profil-desa" class="py-5">
         <div class="container pb-3 mt-5">
-            <h4 class="pb-5 text-center">PROFIL DESA SINGABANGSA</h4>
+            <h4 class="text-center mb-4">PROFIL DESA SINGABANGSA</h4>
             <div class="row">
-                <div class="col-lg-5 pb-3 text-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-5 pb-3 text-center" data-aos="fade">
                     <img src="../../images/PETA.png" class="img-fluid mr-3" alt="peta" width="400">
                 </div>
-                <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-7" data-aos="fade">
 
                     <h5>Lokasi Wilayah</h5>
                     <p><strong>Desa Singabangsa</strong> merupakan salah satu Desa di wilayah Kecamatan Tenjo, Kabupaten Bogor, Provinsi Jawa Barat, dengan luas wilayah 303.262 Ha. Yang terbagi dalam 2 Dusun 4 Rukun Warga (RW), 15 Rukun Tetangga (RT).<br>

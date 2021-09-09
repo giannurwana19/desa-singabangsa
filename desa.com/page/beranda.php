@@ -120,7 +120,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="100">
+                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="200">
                         <div class="image-item">
                             <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
                                 <img src="assets/images/news/news1.jpeg" class="img-shadow" width="100%" height="100%" alt="">
@@ -128,7 +128,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="100">
+                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="300">
                         <div class="image-item">
                             <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
                                 <img src="assets/images/news/news1.jpeg" class="img-shadow" width="100%" height="100%" alt="">
@@ -136,7 +136,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="100">
+                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="400">
                         <div class="image-item">
                             <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
                                 <img src="assets/images/news/news1.jpeg" class="img-shadow" width="100%" height="100%" alt="">
@@ -144,7 +144,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="100">
+                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="500">
                         <div class="image-item">
                             <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
                                 <img src="assets/images/news/news1.jpeg" class="img-shadow" width="100%" height="100%" alt="">
@@ -152,7 +152,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="100">
+                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="600">
                         <div class="image-item">
                             <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
                                 <img src="assets/images/news/news1.jpeg" class="img-shadow" width="100%" height="100%" alt="">

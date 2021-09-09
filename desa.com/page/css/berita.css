@@ -1,34 +1,5 @@
-.container h4{
-    margin-top: 8.3%;
-    
-}
-.card:hover{
-    box-shadow: -5px 13px 20px -20px rgba(0,0,0,0.64);
-    cursor: pointer;
-    transition: .5s;
-}
-
-ol{
-    list-style: none;
-    margin-left: -16.5%;
-}
-
-@media (max-width: 768px) {
-    .berita h4{
-        margin-top: 22.5%;
-    }
-    .form-control{
-        width: 45%;
-    }
-
-    .btn{
-        margin-left: 3%;
-    }
-}
-
-/* media screen detail berita */
-@media (max-width: 768px){
-    .breadcrumb{
-      width: 200%;
-    }
+.card:hover {
+  box-shadow: -5px 13px 20px -20px rgba(0, 0, 0, 0.64);
+  cursor: pointer;
+  transition: 0.5s;
 }
