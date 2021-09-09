@@ -51,7 +51,7 @@
  <?php require '../navbar.php' ?>
 
 <section class="py-5">
-        <div class="container pt-5">
+        <div class="container">
             <h4 class="pb-4 text-center">BERITA TERKINI</h4>
             <div class="row">
                 <div class="col-md-8">
@@ -62,20 +62,9 @@
                                 <div class="mb-2 text-blue-900 font-weight-bold">
                                     <small><i class="far fa-clock"></i> 27 September 2021</small>
                                 </div>
-                              <div class="breadcrumbs">
-                              <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb bg-blue-900" style="margin-left: .43%;">
-                                    <li class="breadcrumb-item text-white" >
-                                        <a href="berita.php">Berita</a>
-                                    </li>
-                                    <li class="breadcrumb-item active text-white" aria-current="page">Berita Terkini</li>
-                                </ol>
-                                </nav>
-                              </div>
+
                                 <div class="mt-3 mb-3">
-                                    <span>
-                                        <img src="assets/images/news/news1.jpeg" class="detail-agenda-img" width="660" height="400" alt=""><br>
-                                    </span>
+                                        <img src="assets/images/news/news1.jpeg" class=" img-fluid detail-agenda-img" alt=""><br>
                                 </div>
                                 <p class="text-justify">Bulan Bakti Pancakarsa merupakan upaya pemerintah daerah untuk menumbuhkembangkan dan melestarikan budaya gotong royong masyarakat Kabupaten Bogor.</p>
                                 <p class="text-justify">Program ini sebagai tindak lanjut atas arahan Bupati Bogor saat peletakan batu pertama Taman Pancakarsa pada 30 Agustus 2019 di Cibinong.</p>
