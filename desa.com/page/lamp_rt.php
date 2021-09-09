@@ -59,7 +59,7 @@
             <h5 class="text-center mb-4 mt-4">Dokumen Lampiran RT & RW</h5>
             <div class="row mb-3">
                 <div class="col">
-                <iframe src="assets/doc/rt.pdf" style="width:100%; height:600px;"></iframe>
+                <iframe src="../../doc_lembaga_masy/rt.pdf" style="width:100%; height:600px;"></iframe>
                 </div>
             </div>
             <hr>

@@ -59,7 +59,7 @@
             <h5 class="text-center mb-4 mt-4">Dokumen Lampiran LINMAS</h5>
             <div class="row mb-3">
                 <div class="col">
-                <iframe src="assets/doc/linmas.pdf" style="width:100%; height:600px;"></iframe>
+                <iframe src="../../doc_lembaga_masy/linmas.pdf" style="width:100%; height:600px;"></iframe>
                 </div>
             </div>
             <hr>

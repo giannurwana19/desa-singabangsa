@@ -55,7 +55,7 @@
             <h4 class="pb-5 text-center">PROFIL DESA SINGABANGSA</h4>
             <div class="row">
                 <div class="col-lg-5 pb-3 text-center" data-aos="fade-up" data-aos-delay="200">
-                    <img src="../../images/peta.png" class="img-fluid mr-3" alt="peta" width="400">
+                    <img src="../../images/PETA.png" class="img-fluid mr-3" alt="peta" width="400">
                 </div>
                 <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
 
@@ -115,7 +115,7 @@
 
                     <div class="col-md-7 py-3" data-aos="fade">
                         <div class="text-center">
-                            <img src="assets/images/profil/bg.jpg" class="img-fluid" alt="desa">
+                            <img src="../../images/desa/bg.JPG" class="img-fluid" alt="desa">
                         </div>
                     </div>
 
@@ -145,7 +145,7 @@
                 </div>
                 <div class="col-lg-12 pt-3 text-center">
                     <h5>Struktur Organisasi Desa Singabangsa</h5>
-                    <img class="img-fluid rounded mb-4" src="assets/images/profil/struktur.png" alt="" data-aos="fade">
+                    <img class="img-fluid rounded mb-4" src="../../images/struktur.png" alt="" data-aos="fade">
                     <p class="text-center" data-aos="fade">
                         <b>1. KELEMBAGAAN DESA</b><br>
                         - Kepala Desa : JAYA JUNAEDI<br>
@@ -203,7 +203,7 @@
                 <div class="col-6 col-lg-3">
                     <div class="thumbnail">
                         <h6 class="mb-4">LINMAS</h6>
-                        <img class="mb-4" src="assets/images/profil/linmas.png" class="img-responsive" width="100"><br>
+                        <img class="mb-4" src="../../doc_lembaga_masy/linmas.png" class="img-responsive" width="100"><br>
                         <!-- <a href="index.php?page=lamp_linmas">Lihat dokumen lampiran</a> -->
                         <!-- <a href="profil.php?lamp=linmas">Lihat dokumen lampiran</a> -->
                         <a href="lamp_linmas.php">Lihat dokumen lampiran</a>
@@ -212,21 +212,21 @@
                 <div class="col-6 col-lg-3">
                     <div class="thumbnail">
                         <h6 class="mb-4">LPMD</h6>
-                        <img class="mb-4" src="assets/images/profil/lpmd.jpg" class="img-responsive" width="100"><br>
+                        <img class="mb-4" src="../../doc_lembaga_masy/lpmd.jpg" class="img-responsive" width="100"><br>
                         <a href="lamp_lpmd.php">Lihat dokumen lampiran</a>
                     </div>
                 </div>
                 <div class="col-6 col-lg-3">
                     <div class="thumbnail">
                         <h6 class="mb-4">GAPOKTAN</h6>
-                        <img class="mb-4" src="assets/images/profil/gapoktan.jpg" class="img-responsive" width="100"><br>
+                        <img class="mb-4" src="../../doc_lembaga_masy/gapoktan.jpg" class="img-responsive" width="100"><br>
                         <a href="lamp_gapoktan.php">Lihat dokumen lampiran</a>
                     </div>
                 </div>
                 <div class="col-6 col-lg-3">
                     <div class="thumbnail">
                         <h6 class="mb-4">RT & RW</h6>
-                        <img class="mb-4" src="assets/images/profil/rt.jpg" class="img-responsive" width="100"><br>
+                        <img class="mb-4" src="../../doc_lembaga_masy/rt.jpg" class="img-responsive" width="100"><br>
                         <a href="lamp_rt.php">Lihat dokumen lampiran</a>
                     </div>
                 </div>
