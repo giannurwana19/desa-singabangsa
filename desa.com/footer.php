@@ -19,6 +19,24 @@
                             </div>
                             <a href="http://pengaduan.bogorkab.go.id" target="_blank" class="btn btn-primary">Pengaduan</a>
                         </div>
+                        <div class="mt-4">
+                            <div>
+                                <h5>Ikuti Kami</h5>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3 mr-3">
+                                        <a href="#">
+                                            <img src="./assets/sosmed/instagram.svg" alt="instagram_logo" class="img-fluid" width="30px" data-toogle="tooltip" title="Instagram" data-html="true">
+                                        </a>
+                                        <a href="#">
+                                            <img src="./assets/sosmed/facebook.svg" alt="facebook_logo" class="img-fluid mx-2" width="25px" data-toogle="tooltip" title="Facebook" data-html="true">
+                                        </a>
+                                        <a href="#">
+                                            <img src="./assets/sosmed/twitter.svg" alt="twitter_logo" class="img-fluid" width="25px" data-toogle="tooltip" title="Twitter" data-html="true">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-5">
                         <div class="fb-frame">
