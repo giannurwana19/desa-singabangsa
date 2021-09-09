@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '../../koneksi/koneksi.php';
+include '../koneksi/koneksi.php';
 
 // Login
 if (isset($_POST['login'])) {
@@ -10,10 +10,10 @@ if (isset($_POST['login'])) {
 
   if ($status == 'admin') {
     $result = mysqli_query($conn, "SELECT id_pegawai, password FROM pegawai WHERE id_pegawai='$id' AND password='$password'");
-    $r     = mysqli_fetch_array($result, $query);
+    $r     = mysqli_fetch_array($result);
     if ($r) {
       $_SESSION['id_pegawai'] = $id; //id pegawai dimasukkan kedalam session
-      header("Location: ../../admin_page/home.php");
+      header("Location: ../admin_page/home.php");
     } else {
 ?>
       <script type="text/javascript">
@@ -27,7 +27,7 @@ if (isset($_POST['login'])) {
     $r     = mysqli_fetch_array($result);
     if ($r) {
       $_SESSION['id_jurnalis'] = $id; //id jurnalis dimasukkan kedalam session
-      header("Location: ../../jurnalis_page/home.php");
+      header("Location: ../jurnalis_page/home.php");
     } else {
     ?>
       <script type="text/javascript">
