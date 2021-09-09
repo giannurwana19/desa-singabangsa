@@ -57,24 +57,22 @@
             <h4 class="pb-4 text-center">AGENDA</h4>
             <div class="row">
                 <div class="col-md-8">
-                    <div class="news-container">
-                        <div class="row">
-                            <div class="col-md-11 order-2 order-sm-2 order-md-1 order-lg-1 mb-3">
-                                <h5 class="text-justify">Bulan Bakti Pancakarsa</h5>
-                                <div class="mb-2 text-blue-900 font-weight-bold">
-                                    <small><i class="fas fa-user"></i> administrator</small> |
-                                    <small><i class="far fa-clock"></i> 25 Agustus 2021</small>
-                                </div>
-                                <div class="text-center py-3">
-                                    <img src="assets/images/news/news4.jpeg" class="img-fluid img-detail" alt="">
-                                </div>
-                                <p class="text-justify">Bulan Bakti Pancakarsa merupakan upaya pemerintah daerah untuk menumbuhkembangkan dan melestarikan budaya gotong royong masyarakat Kabupaten Bogor.</p>
-                                <p class="text-justify">Program ini sebagai tindak lanjut atas arahan Bupati Bogor saat peletakan batu pertama Taman Pancakarsa pada 30 Agustus 2019 di Cibinong.</p>
-                                <p class="text-justify">Kegiatan ini dilakukan serentak di 40 Kecamatan dengan melibatkan seluruh stakeholder, mulai dari RT, RW, Desa/Kelurahan, Kecamatan, Forkopimda, SKPD, Ormas, Organisasi Pemuda, Komunitas, Pelajar/Mahasiswa, Guru/Dosen, Penyuluh, Pekerja Sosial, Tagana, PKK, dan seluruh elemen masyarakat Kabupaten Bogor.</p>
-                                <p class="text-justify">Bulan Bakti Pancakarsa merupakan upaya pemerintah daerah untuk menumbuhkembangkan dan melestarikan budaya gotong royong masyarakat Kabupaten Bogor.</p>
-                                <p class="text-justify">Program ini sebagai tindak lanjut atas arahan Bupati Bogor saat peletakan batu pertama Taman Pancakarsa pada 30 Agustus 2019 di Cibinong.</p>
-                                <p class="text-justify">Kegiatan ini dilakukan serentak di 40 Kecamatan dengan melibatkan seluruh stakeholder, mulai dari RT, RW, Desa/Kelurahan, Kecamatan, Forkopimda, SKPD, Ormas, Organisasi Pemuda, Komunitas, Pelajar/Mahasiswa, Guru/Dosen, Penyuluh, Pekerja Sosial, Tagana, PKK, dan seluruh elemen masyarakat Kabupaten Bogor.</p>
+                    <div class="row">
+                        <div class="col-md">
+                            <h5 class="text-justify">Bulan Bakti Pancakarsa</h5>
+                            <div class="mb-2 text-blue-900 font-weight-bold">
+                                <small><i class="fas fa-user"></i> administrator</small> |
+                                <small><i class="far fa-clock"></i> 25 Agustus 2021</small>
                             </div>
+                            <div class="text-center py-3">
+                                <img src="assets/images/news/news4.jpeg" class="img-fluid" alt="">
+                            </div>
+                            <p class="text-justify">Bulan Bakti Pancakarsa merupakan upaya pemerintah daerah untuk menumbuhkembangkan dan melestarikan budaya gotong royong masyarakat Kabupaten Bogor.</p>
+                            <p class="text-justify">Program ini sebagai tindak lanjut atas arahan Bupati Bogor saat peletakan batu pertama Taman Pancakarsa pada 30 Agustus 2019 di Cibinong.</p>
+                            <p class="text-justify">Kegiatan ini dilakukan serentak di 40 Kecamatan dengan melibatkan seluruh stakeholder, mulai dari RT, RW, Desa/Kelurahan, Kecamatan, Forkopimda, SKPD, Ormas, Organisasi Pemuda, Komunitas, Pelajar/Mahasiswa, Guru/Dosen, Penyuluh, Pekerja Sosial, Tagana, PKK, dan seluruh elemen masyarakat Kabupaten Bogor.</p>
+                            <p class="text-justify">Bulan Bakti Pancakarsa merupakan upaya pemerintah daerah untuk menumbuhkembangkan dan melestarikan budaya gotong royong masyarakat Kabupaten Bogor.</p>
+                            <p class="text-justify">Program ini sebagai tindak lanjut atas arahan Bupati Bogor saat peletakan batu pertama Taman Pancakarsa pada 30 Agustus 2019 di Cibinong.</p>
+                            <p class="text-justify">Kegiatan ini dilakukan serentak di 40 Kecamatan dengan melibatkan seluruh stakeholder, mulai dari RT, RW, Desa/Kelurahan, Kecamatan, Forkopimda, SKPD, Ormas, Organisasi Pemuda, Komunitas, Pelajar/Mahasiswa, Guru/Dosen, Penyuluh, Pekerja Sosial, Tagana, PKK, dan seluruh elemen masyarakat Kabupaten Bogor.</p>
                         </div>
                     </div>
                 </div>
