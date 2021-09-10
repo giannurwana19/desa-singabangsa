@@ -1,3 +1,13 @@
+<?php
+
+require '../koneksi/koneksi.php';
+
+// agenda
+$resultAgenda = mysqli_query($conn, "SELECT * FROM agenda ORDER BY tanggal DESC, id_agenda DESC");
+$allAgenda = mysqli_fetch_all($resultAgenda, MYSQLI_ASSOC);
+
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -55,126 +65,32 @@
     <section id="agenda" class="py-5">
         <div class="container pt-5">
             <h4 class="pb-4 text-center">AGENDA</h4>
-            <div class="row border-bottom bg-light py-2 px-3">
-                <div class="col-12">
-                    <div class="d-flex">
-                        <div>
-                            <i class="far fa-2x text-blue-900 fa-calendar-check mr-4"></i>
-                        </div>
-                        <div>
-                            <div>
-                                <a href="index.php?page=detail-agenda" class="text-reset">
-                                    <strong class="text-sm text-blue-900">SK PERPANJANGAN PPKM LEVEL 3 TERBARU</strong>
-                                </a>
+            <?php if (mysqli_num_rows($resultAgenda) > 0) : ?>
+                <?php foreach ($allAgenda as $agenda) : ?>
+                    <div class="row border-bottom bg-light py-2 px-3">
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <div>
+                                    <i class="far fa-2x text-blue-900 fa-calendar-check mr-4"></i>
+                                </div>
+                                <div>
+                                    <div>
+                                        <a href="index.php?page=detail-agenda&id=<?= $agenda['id_agenda']; ?>" class="text-reset">
+                                            <strong class="text-sm text-blue-900"><?= $agenda['judul']; ?></strong>
+                                        </a>
+                                    </div>
+                                    <small>
+                                        <i class="far fa-calendar-alt"></i>
+                                        <?= date_format(date_create($agenda['tanggal']), "d F Y"); ?>
+                                    </small>
+                                </div>
                             </div>
-                            <small>
-                                <i class="far fa-calendar-alt"></i>
-                                Selasa, 31 Agustus 2021
-                            </small>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="row border-bottom bg-light py-2 px-3">
-                <div class="col-12">
-                    <div class="d-flex bg-light">
-                        <div>
-                            <i class="far fa-2x text-blue-900 fa-calendar-check mr-4"></i>
-                        </div>
-                        <div>
-                            <div>
-                                <a href="index.php?page=detail-agenda" class="text-reset">
-                                    <strong class="text-sm text-blue-900">Agenda Kegiatan Pemerintah Kabupaten Bogor</strong>
-                                </a>
-                            </div>
-                            <small>
-                                <i class="far fa-calendar-alt"></i>
-                                Selasa, 12 Agustus 2021
-                            </small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row border-bottom bg-light py-2 px-3">
-                <div class="col-12">
-                    <div class="d-flex bg-light">
-                        <div>
-                            <i class="far fa-2x text-blue-900 fa-calendar-check mr-4"></i>
-                        </div>
-                        <div>
-                            <div>
-                                <a href="index.php?page=detail-agenda" class="text-reset">
-                                    <strong class="text-sm text-blue-900">PERPANJANGAN PPKM DARURAT LEVEL 4</strong>
-                                </a>
-                            </div>
-                            <small>
-                                <i class="far fa-calendar-alt"></i>
-                                Selasa, 09 Agustus 2021
-                            </small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row border-bottom bg-light py-2 px-3">
-                <div class="col-12">
-                    <div class="d-flex">
-                        <div>
-                            <i class="far fa-2x text-blue-900 fa-calendar-check mr-4"></i>
-                        </div>
-                        <div>
-                            <div>
-                                <a href="index.php?page=detail-agenda" class="text-reset">
-                                    <strong class="text-sm text-blue-900">SK PERPANJANGAN PPKM LEVEL 3 TERBARU</strong>
-                                </a>
-                            </div>
-                            <small>
-                                <i class="far fa-calendar-alt"></i>
-                                Selasa, 31 Agustus 2021
-                            </small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row border-bottom bg-light py-2 px-3">
-                <div class="col-12">
-                    <div class="d-flex bg-light">
-                        <div>
-                            <i class="far fa-2x text-blue-900 fa-calendar-check mr-4"></i>
-                        </div>
-                        <div>
-                            <div>
-                                <a href="index.php?page=detail-agenda" class="text-reset">
-                                    <strong class="text-sm text-blue-900">Agenda Kegiatan Pemerintah Kabupaten Bogor</strong>
-                                </a>
-                            </div>
-                            <small>
-                                <i class="far fa-calendar-alt"></i>
-                                Selasa, 12 Agustus 2021
-                            </small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row border-bottom bg-light py-2 px-3">
-                <div class="col-12">
-                    <div class="d-flex bg-light">
-                        <div>
-                            <i class="far fa-2x text-blue-900 fa-calendar-check mr-4"></i>
-                        </div>
-                        <div>
-                            <div>
-                                <a href="index.php?page=detail-agenda" class="text-reset">
-                                    <strong class="text-sm text-blue-900">PERPANJANGAN PPKM DARURAT LEVEL 4</strong>
-                                </a>
-                            </div>
-                            <small>
-                                <i class="far fa-calendar-alt"></i>
-                                Selasa, 09 Agustus 2021
-                            </small>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                <?php endforeach; ?>
+            <?php else : ?>
+                <h6 class="text-center">Belum ada agenda</h6>
+            <?php endif; ?>
         </div>
     </section>
 
