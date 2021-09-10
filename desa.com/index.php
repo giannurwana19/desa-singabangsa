@@ -12,6 +12,9 @@ if (isset($_GET['page'])) {
         case 'berita':
             include 'page/berita.php';
             break;
+        case 'detail-berita':
+            include 'page/detail_berita.php';
+            break;
         case 'kontak':
             include 'page/kontak.php';
             break;

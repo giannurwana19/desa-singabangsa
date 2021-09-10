@@ -6,6 +6,10 @@ require '../koneksi/koneksi.php';
 $resultAgenda = mysqli_query($conn, "SELECT * FROM agenda ORDER BY tanggal DESC, id_agenda DESC LIMIT 3");
 $allAgenda = mysqli_fetch_all($resultAgenda, MYSQLI_ASSOC);
 
+// berita
+$resultBerita = mysqli_query($conn, "SELECT * FROM informasi ORDER BY tgl_post DESC, id_info DESC");
+$allBerita = mysqli_fetch_all($resultBerita, MYSQLI_ASSOC);
+
 ?>
 
 <!DOCTYPE html>
@@ -82,102 +86,34 @@ $allAgenda = mysqli_fetch_all($resultAgenda, MYSQLI_ASSOC);
             <div class="row">
                 <div class="col-md-8">
                     <div class="row">
-                        <div class="col-lg-6 mb-4">
-                            <div class="news-card">
-                                <div class="card">
-                                    <img src="./assets/images/news/news1.jpeg" class="card-img-top" alt="news-image">
-                                    <div class="card-body">
-                                        <a href="detail_berita.php" class="text-reset">
-                                            <h6 class="text-justify text-blue-900">Optimalkan Sosialisasi Penerapan Ganjil Genap Kawasan Puncak</h6>
-                                        </a>
-                                        <div>
-                                            <small class="text-blue-900"><i class="far fa-clock text-blue-900 "></i> 27 September 2021</small>
-                                            <small class="text-blue-900"><i class="fas fa-user text-blue-900 "></i> administrator</small>
+                        <?php if (mysqli_num_rows($resultBerita) > 0) : ?>
+                            <?php foreach ($allBerita as $berita) : ?>
+                                <div class="col-lg-6 mb-4">
+                                    <div class="news-card">
+                                        <div class="card">
+                                            <?php if ($berita['foto']) : ?>
+                                                <img src="../images/<?= $berita['foto'] ?>" class="card-img-top" alt="news-image">
+                                            <?php endif; ?>
+                                            <div class="card-body">
+                                                <a href="index.php?page=detail-berita&id=<?= $berita['id_info'] ?>" class="text-reset">
+                                                    <h6 class="text-justify text-blue-900"><?= $berita['judul'] ?></h6>
+                                                </a>
+                                                <div>
+                                                    <small class="text-blue-900"><i class="fas fa-user text-blue-900 "></i> administrator</small> |
+                                                    <small class="text-blue-900"><i class="far fa-clock text-blue-900 ">
+                                                        </i> <?= date_format(date_create($berita['tgl_post']), "d F Y"); ?>
+                                                    </small>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                            <?php endforeach; ?>
+                        <?php else : ?>
+                            <div class="col-lg-12 mb-4">
+                                <h6>Belum ada berita</h6>
                             </div>
-                        </div>
-                        <div class="col-lg-6 mb-4">
-                            <div class="news-card">
-                                <div class="card">
-                                    <img src="./assets/images/news/news1.jpeg" class="card-img-top" alt="news-image">
-                                    <div class="card-body">
-                                        <a href="detail_berita.php" class="text-reset">
-                                            <h6 class="text-justify text-blue-900">Optimalkan Sosialisasi Penerapan Ganjil Genap Kawasan Puncak</h6>
-                                        </a>
-                                        <div>
-                                            <small class="text-blue-900"><i class="far fa-clock text-blue-900 "></i> 27 September 2021</small>
-                                            <small class="text-blue-900"><i class="fas fa-user text-blue-900 "></i> administrator</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mb-4">
-                            <div class="news-card">
-                                <div class="card">
-                                    <img src="./assets/images/news/news1.jpeg" class="card-img-top" alt="news-image">
-                                    <div class="card-body">
-                                        <a href="detail_berita.php" class="text-reset">
-                                            <h6 class="text-justify text-blue-900">Optimalkan Sosialisasi Penerapan Ganjil Genap Kawasan Puncak</h6>
-                                        </a>
-                                        <div>
-                                            <small class="text-blue-900"><i class="far fa-clock text-blue-900 "></i> 27 September 2021</small>
-                                            <small class="text-blue-900"><i class="fas fa-user text-blue-900 "></i> administrator</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mb-4">
-                            <div class="news-card">
-                                <div class="card">
-                                    <img src="./assets/images/news/news1.jpeg" class="card-img-top" alt="news-image">
-                                    <div class="card-body">
-                                        <a href="detail_berita.php" class="text-reset">
-                                            <h6 class="text-justify text-blue-900">Optimalkan Sosialisasi Penerapan Ganjil Genap Kawasan Puncak</h6>
-                                        </a>
-                                        <div>
-                                            <small class="text-blue-900"><i class="far fa-clock text-blue-900 "></i> 27 September 2021</small>
-                                            <small class="text-blue-900"><i class="fas fa-user text-blue-900 "></i> administrator</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mb-4">
-                            <div class="news-card">
-                                <div class="card">
-                                    <img src="./assets/images/news/news1.jpeg" class="card-img-top" alt="news-image">
-                                    <div class="card-body">
-                                        <a href="detail_berita.php" class="text-reset">
-                                            <h6 class="text-justify text-blue-900">Optimalkan Sosialisasi Penerapan Ganjil Genap Kawasan Puncak</h6>
-                                        </a>
-                                        <div>
-                                            <small class="text-blue-900"><i class="far fa-clock text-blue-900 "></i> 27 September 2021</small>
-                                            <small class="text-blue-900"><i class="fas fa-user text-blue-900 "></i> administrator</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mb-4">
-                            <div class="news-card">
-                                <div class="card">
-                                    <img src="./assets/images/news/news1.jpeg" class="card-img-top" alt="news-image">
-                                    <div class="card-body">
-                                        <a href="detail_berita.php" class="text-reset">
-                                            <h6 class="text-justify text-blue-900">Optimalkan Sosialisasi Penerapan Ganjil Genap Kawasan Puncak</h6>
-                                        </a>
-                                        <div>
-                                            <small class="text-blue-900"><i class="far fa-clock text-blue-900 "></i> 27 September 2021</small>
-                                            <small class="text-blue-900"><i class="fas fa-user text-blue-900 "></i> administrator</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <?php endif; ?>
                     </div>
                 </div>
                 <div class="col-md-4">

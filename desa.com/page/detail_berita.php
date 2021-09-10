@@ -1,3 +1,26 @@
+<?php
+
+require '../koneksi/koneksi.php';
+
+$resultAgenda = mysqli_query($conn, "SELECT * FROM agenda ORDER BY tanggal DESC, id_agenda DESC LIMIT 3");
+$allAgenda = mysqli_fetch_all($resultAgenda, MYSQLI_ASSOC);
+
+$id = $_GET['id'];
+
+if ($id) {
+    $result = mysqli_query($conn, "SELECT * FROM informasi WHERE id_info='$id'");
+
+    if (mysqli_num_rows($result) > 0) {
+        $berita = mysqli_fetch_assoc($result);
+    } else {
+        header('Location: index.php?page=berita');
+    }
+} else {
+    header('Location: index.php?page=berita');
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -50,7 +73,7 @@
 <body>
 
     <!-- navbar -->
-    <?php require '../navbar.php' ?>
+    <?php include 'navbar.php' ?>
 
     <section class="py-5">
         <div class="container mt-5">
@@ -59,20 +82,20 @@
                 <div class="col-md-8">
                     <div class="row mb-8">
                         <div class="col">
-                            <h5 class="text-justify">Optimalkan Sosialisasi Penerapan Ganjil Genap Kawasan Puncak</h5>
+                            <h5 class="text-justify"><?= $berita['judul'] ?></h5>
                             <div class="mb-2 text-blue-900 font-weight-bold">
-                                <small><i class="far fa-clock"></i> 27 September 2021</small>
+                                <small class="text-blue-900"><i class="fas fa-user text-blue-900 "></i> administrator</small> |
+                                <small><i class="far fa-clock"></i> <?= date_format(date_create($berita['tgl_post']), "d F Y"); ?></small>
                             </div>
 
                             <div class="mt-3 mb-3">
-                                <img src="assets/images/news/news1.jpeg" class=" img-fluid detail-agenda-img" alt=""><br>
+                                <?php if ($berita['foto']) : ?>
+                                    <img src="../images/<?= $berita['foto'] ?>" class=" img-fluid detail-agenda-img" alt=""><br>
+                                <?php endif; ?>
                             </div>
-                            <p class="text-justify">Bulan Bakti Pancakarsa merupakan upaya pemerintah daerah untuk menumbuhkembangkan dan melestarikan budaya gotong royong masyarakat Kabupaten Bogor.</p>
-                            <p class="text-justify">Program ini sebagai tindak lanjut atas arahan Bupati Bogor saat peletakan batu pertama Taman Pancakarsa pada 30 Agustus 2019 di Cibinong.</p>
-                            <p class="text-justify">Kegiatan ini dilakukan serentak di 40 Kecamatan dengan melibatkan seluruh stakeholder, mulai dari RT, RW, Desa/Kelurahan, Kecamatan, Forkopimda, SKPD, Ormas, Organisasi Pemuda, Komunitas, Pelajar/Mahasiswa, Guru/Dosen, Penyuluh, Pekerja Sosial, Tagana, PKK, dan seluruh elemen masyarakat Kabupaten Bogor.</p>
-                            <p class="text-justify">Bulan Bakti Pancakarsa merupakan upaya pemerintah daerah untuk menumbuhkembangkan dan melestarikan budaya gotong royong masyarakat Kabupaten Bogor.</p>
-                            <p class="text-justify">Program ini sebagai tindak lanjut atas arahan Bupati Bogor saat peletakan batu pertama Taman Pancakarsa pada 30 Agustus 2019 di Cibinong.</p>
-                            <p class="text-justify">Kegiatan ini dilakukan serentak di 40 Kecamatan dengan melibatkan seluruh stakeholder, mulai dari RT, RW, Desa/Kelurahan, Kecamatan, Forkopimda, SKPD, Ormas, Organisasi Pemuda, Komunitas, Pelajar/Mahasiswa, Guru/Dosen, Penyuluh, Pekerja Sosial, Tagana, PKK, dan seluruh elemen masyarakat Kabupaten Bogor.</p>
+                            <div>
+                                <?= $berita['isi']; ?>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -146,7 +169,7 @@
         </div>
     </section>
 
-    <?php require '../footer.php' ?>
+    <?php include 'footer.php' ?>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>

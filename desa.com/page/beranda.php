@@ -6,6 +6,10 @@ require '../koneksi/koneksi.php';
 $resultAgenda = mysqli_query($conn, "SELECT * FROM agenda ORDER BY tanggal DESC, id_agenda DESC LIMIT 3");
 $allAgenda = mysqli_fetch_all($resultAgenda, MYSQLI_ASSOC);
 
+// berita
+$resultBerita = mysqli_query($conn, "SELECT * FROM informasi ORDER BY tgl_post DESC, id_info DESC limit 3");
+$allBerita = mysqli_fetch_all($resultBerita, MYSQLI_ASSOC);
+
 ?>
 
 <!doctype html>
@@ -181,51 +185,30 @@ $allAgenda = mysqli_fetch_all($resultAgenda, MYSQLI_ASSOC);
             <div class="row">
                 <div class="col-md-8">
                     <div class="news-container">
-                        <div class="row news-item border-bottom mb-4">
-                            <div class="col-md-8 order-2 order-sm-2 order-md-1 order-lg-1 mb-3">
-                                <a href="#" class="text-reset">
-                                    <h6 class="text-justify text-blue-900">Optimalkan Sosialisasi Penerapan Ganjil Genap Kawasan Puncak, Bupati Bogor Lakukan Rapat Secara Virtual Dengan Kemenhub RI</h6>
-                                </a>
-                                <div class="mb-2 text-blue-900 font-weight-bold">
-                                    <small><i class="fas fa-user"></i> administrator</small> |
-                                    <small><i class="far fa-clock"></i> 25 Agustus 2021</small>
+                        <?php if (mysqli_num_rows($resultAgenda) > 0) : ?>
+                            <?php foreach ($allBerita as $berita) : ?>
+                                <div class="row news-item border-bottom mb-4">
+                                    <div class="col-md-8 order-2 order-sm-2 order-md-1 order-lg-1 mb-3">
+                                        <a href="index.php?page=detail-berita&id=<?= $berita['id_info']; ?>" class="text-reset">
+                                            <h5 class="text-justify text-blue-900"><?= $berita['judul']; ?></h5>
+                                        </a>
+                                        <div class="mb-2 text-blue-900 font-weight-bold">
+                                            <small><i class="fas fa-user"></i> administrator</small> |
+                                            <small><i class="far fa-clock"></i> <?= date_format(date_create($berita['tgl_post']), "d F Y"); ?></small>
+                                        </div>
+                                        <div>
+                                            <p><?= $berita['judul']; ?></p>
+                                            <a href="index.php?page=detail-berita&id=<?= $berita['id_info'] ?>" class="text-decoration-none text-blue-900 font-weight-bold">...Selengkapnya <i class="fas fa-angle-double-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 order-1 order-sm-1 order-md-2 order-lg-2 mb-2">
+                                        <img src="../images/<?= $berita['foto'] ?>" class="img-fluid rounded" alt="">
+                                    </div>
                                 </div>
-                                <p class="text-justify">Menurutnya, tujuan mengundang masyarakat wilayah kawasan Puncak untuk memberikan penjelasan, dan meminta masukan kepada masyarakat yang kemudian akan ia sampaikan ke kementerian sebagai bahan kajian... <a href="#" class="text-decoration-none text-blue-900 font-weight-bold">Selengkapnya <i class="fas fa-angle-double-right"></i></a></p>
-                            </div>
-                            <div class="col-md-4 order-1 order-sm-1 order-md-2 order-lg-2 mb-2">
-                                <img src="assets/images/news/news1.jpeg" class="img-fluid rounded" alt="">
-                            </div>
-                        </div>
-                        <div class="row news-item border-bottom mb-4">
-                            <div class="col-md-8 order-2 order-sm-2 order-md-1 order-lg-1 mb-3">
-                                <a href="#" class="text-reset">
-                                    <h6 class="text-justify text-blue-900">Optimalkan Sosialisasi Penerapan Ganjil Genap Kawasan Puncak, Bupati Bogor Lakukan Rapat Secara Virtual Dengan Kemenhub RI</h6>
-                                </a>
-                                <div class="mb-2 text-blue-900 font-weight-bold">
-                                    <small><i class="fas fa-user"></i> administrator</small> |
-                                    <small><i class="far fa-clock"></i> 25 Agustus 2021</small>
-                                </div>
-                                <p class="text-justify">Menurutnya, tujuan mengundang masyarakat wilayah kawasan Puncak untuk memberikan penjelasan, dan meminta masukan kepada masyarakat yang kemudian akan ia sampaikan ke kementerian sebagai bahan kajian... <a href="#" class="text-decoration-none text-blue-900 font-weight-bold">Selengkapnya <i class="fas fa-angle-double-right"></i></a></p>
-                            </div>
-                            <div class="col-md-4 order-1 order-sm-1 order-md-2 order-lg-2 mb-2">
-                                <img src="assets/images/news/news1.jpeg" class="img-fluid rounded" alt="">
-                            </div>
-                        </div>
-                        <div class="row news-item border-bottom mb-4">
-                            <div class="col-md-8 order-2 order-sm-2 order-md-1 order-lg-1 mb-3">
-                                <a href="#" class="text-reset">
-                                    <h6 class="text-justify text-blue-900">Optimalkan Sosialisasi Penerapan Ganjil Genap Kawasan Puncak, Bupati Bogor Lakukan Rapat Secara Virtual Dengan Kemenhub RI</h6>
-                                </a>
-                                <div class="mb-2 text-blue-900 font-weight-bold">
-                                    <small><i class="fas fa-user"></i> administrator</small> |
-                                    <small><i class="far fa-clock"></i> 25 Agustus 2021</small>
-                                </div>
-                                <p class="text-justify">Menurutnya, tujuan mengundang masyarakat wilayah kawasan Puncak untuk memberikan penjelasan, dan meminta masukan kepada masyarakat yang kemudian akan ia sampaikan ke kementerian sebagai bahan kajian... <a href="#" class="text-decoration-none text-blue-900 font-weight-bold">Selengkapnya <i class="fas fa-angle-double-right"></i></a></p>
-                            </div>
-                            <div class="col-md-4 order-1 order-sm-1 order-md-2 order-lg-2 mb-2">
-                                <img src="assets/images/news/news1.jpeg" class="img-fluid rounded" alt="">
-                            </div>
-                        </div>
+                            <?php endforeach; ?>
+                        <?php else : ?>
+                            <h6>Belum ada Berita</h6>
+                        <?php endif; ?>
                     </div>
                 </div>
                 <div class="col-md-4 px-4">
