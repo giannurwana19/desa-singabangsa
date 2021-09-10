@@ -88,7 +88,7 @@
                                 include 'statistik_pend_pendidikan.php';
                                 break;
                             default:
-                                echo '<script>window.location.href = "404.php"</script>';
+                                echo '<script>window.location.href = "page/404.php"</script>';
                         }
                     } else {
                         include 'statistik_pend_agama.php';
