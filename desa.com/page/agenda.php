@@ -2,9 +2,28 @@
 
 require '../koneksi/koneksi.php';
 
-// agenda
+// pagination agenda
 $resultAgenda = mysqli_query($conn, "SELECT * FROM agenda ORDER BY tanggal DESC, id_agenda DESC");
 $allAgenda = mysqli_fetch_all($resultAgenda, MYSQLI_ASSOC);
+
+$batas = 9;
+$halaman = isset($_GET['halaman']) ? (int) $_GET['halaman'] : 1;
+$halamanAwal = ($halaman > 1) ? ($halaman * $batas) - $batas : 0;
+
+$queryTotalAgenda = mysqli_query($conn, "SELECT * FROM agenda");
+
+$resultAgenda = mysqli_query($conn, "SELECT * FROM agenda ORDER BY tanggal DESC, id_agenda DESC LIMIT $halamanAwal, $batas");
+$allAgenda = mysqli_fetch_all($resultAgenda, MYSQLI_ASSOC);
+
+$previous = $halaman - 1;
+$next = $halaman + 1;
+
+$jumlahAgenda = mysqli_num_rows($queryTotalAgenda);
+$totalHalaman = ceil($jumlahAgenda / $batas);
+
+if ($halaman > $jumlahAgenda) {
+    header('Location: index.php?page=agenda&halaman=1');
+}
 
 ?>
 
@@ -90,6 +109,29 @@ $allAgenda = mysqli_fetch_all($resultAgenda, MYSQLI_ASSOC);
                 <?php endforeach; ?>
             <?php else : ?>
                 <h6 class="text-center">Belum ada agenda</h6>
+            <?php endif; ?>
+
+            <!-- pagination -->
+            <?php if ($jumlahAgenda > $batas) : ?>
+                <nav class="mt-5 text-center">
+                    <ul class="pagination pagination-sm">
+                        <li class="page-item <?php if ($halaman == 1) : ?> disabled <?php endif ?>">
+                            <a class="page-link" <?php if ($halaman > 1) : ?> href="index.php?page=agenda&halaman=<?= $previous ?>" <?php endif; ?>>
+                                Previous
+                            </a>
+                        </li>
+                        <?php for ($no = 1; $no <= $totalHalaman; $no++) : ?>
+                            <li class="page-item <?php if ($halaman == $no) : ?> active <?php endif; ?>">
+                                <a class="page-link" href="index.php?page=agenda&halaman=<?= $no ?>"><?= $no; ?></a>
+                            </li>
+                        <?php endfor; ?>
+                        <li class="page-item <?php if ($halaman == $totalHalaman) : ?> disabled <?php endif ?>">
+                            <a class="page-link" <?php if ($halaman < $totalHalaman) : ?> href="index.php?page=agenda&halaman=<?= $next ?>" <?php endif; ?>>
+                                Next
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             <?php endif; ?>
         </div>
     </section>

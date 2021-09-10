@@ -6,9 +6,28 @@ require '../koneksi/koneksi.php';
 $resultAgenda = mysqli_query($conn, "SELECT * FROM agenda ORDER BY tanggal DESC, id_agenda DESC LIMIT 3");
 $allAgenda = mysqli_fetch_all($resultAgenda, MYSQLI_ASSOC);
 
-// berita
-$resultBerita = mysqli_query($conn, "SELECT * FROM informasi ORDER BY tgl_post DESC, id_info DESC");
+// pagination berita
+$batas = 6;
+$halaman = isset($_GET['halaman']) ? (int) $_GET['halaman'] : 1;
+$halamanAwal = ($halaman > 1) ? ($halaman * $batas) - $batas : 0;
+
+$queryTotalberita = mysqli_query($conn, "SELECT * FROM informasi");
+
+$resultBerita = mysqli_query($conn, "SELECT * FROM informasi ORDER BY tgl_post DESC, id_info DESC LIMIT $halamanAwal, $batas");
 $allBerita = mysqli_fetch_all($resultBerita, MYSQLI_ASSOC);
+
+$previous = $halaman - 1;
+$next = $halaman + 1;
+
+$jumlahBerita = mysqli_num_rows($queryTotalberita);
+$totalHalaman = ceil($jumlahBerita / $batas);
+
+if ($halaman > $jumlahBerita) {
+    header('Location: index.php?page=berita&halaman=1');
+}
+
+// var_dump($jumlahBerita);
+// die;
 
 ?>
 
@@ -68,20 +87,6 @@ $allBerita = mysqli_fetch_all($resultBerita, MYSQLI_ASSOC);
     <section class="py-5">
         <div class="container mt-5">
             <h4 class="text-center">BERITA TERKINI</h4>
-
-            <!-- <div class="row mt-3">
-                <div class="col-lg-4">
-                    <form action="">
-                        <div class="input-group">
-                            <input type="text" class="form-control form-control-sm" placeholder="Cari Berita..." aria-label="Recipient's username" aria-describedby="button-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-primary btn-sm" type="button" id="button-addon2">Cari</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div> -->
-
             <hr>
             <div class="row">
                 <div class="col-md-8">
@@ -115,8 +120,32 @@ $allBerita = mysqli_fetch_all($resultBerita, MYSQLI_ASSOC);
                             </div>
                         <?php endif; ?>
                     </div>
+
+                    <!-- pagination -->
+                    <?php if ($jumlahBerita > $batas) : ?>
+                        <nav>
+                            <ul class="pagination pagination-sm">
+                                <li class="page-item <?php if ($halaman == 1) : ?> disabled <?php endif ?>">
+                                    <a class="page-link" <?php if ($halaman > 1) : ?> href="index.php?page=berita&halaman=<?= $previous ?>" <?php endif; ?>>
+                                        Previous
+                                    </a>
+                                </li>
+                                <?php for ($no = 1; $no <= $totalHalaman; $no++) : ?>
+                                    <li class="page-item <?php if ($halaman == $no) : ?> active <?php endif; ?>">
+                                        <a class="page-link" href="index.php?page=berita&halaman=<?= $no ?>"><?= $no; ?></a>
+                                    </li>
+                                <?php endfor; ?>
+                                <li class="page-item <?php if ($halaman == $totalHalaman) : ?> disabled <?php endif ?>">
+                                    <a class="page-link" <?php if ($halaman < $totalHalaman) : ?> href="index.php?page=berita&halaman=<?= $next ?>" <?php endif; ?>>
+                                        Next
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    <?php endif; ?>
+
                 </div>
-                <div class="col-md-4">
+                <div class=" col-md-4">
                     <h4 class="mb-3">Agenda</h4>
                     <div class="agenda">
                         <?php if (mysqli_num_rows($resultAgenda) > 0) : ?>
