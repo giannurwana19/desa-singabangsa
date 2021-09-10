@@ -9,7 +9,7 @@
     </div>
     <span>
         Download file panduan
-        <a href="../../panduan/akte.docx" download> <u><b>disini</b></u> </a>.
+        <a href="../panduan/akte.docx" download> <u><b>disini</b></u> </a>.
     </span>
     <hr>
 </div>
