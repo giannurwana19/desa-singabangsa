@@ -119,6 +119,7 @@ if(!isset($_SESSION['id_pegawai'])){
 		
 		<ul class="nav menu" >
 			<li><a href="home.php?page=beranda"><i class="glyphicon glyphicon-link"></i> Home </a></li> 
+			<li><a href="home.php?page=galeri"><i class="glyphicon glyphicon-link"></i> Galeri </a></li> 
 			<li><a href="home.php?page=informasi"><i class="glyphicon glyphicon-link"></i> Berita </a></li>
 			<li><a href="home.php?page=agenda"><i class="glyphicon glyphicon-link"></i> Agenda</a></li>
 			<li><a href="home.php?page=penduduk"><i class="glyphicon glyphicon-link"></i> Data Penduduk</a></li>

@@ -7,8 +7,12 @@ $resultAgenda = mysqli_query($conn, "SELECT * FROM agenda ORDER BY tanggal DESC,
 $allAgenda = mysqli_fetch_all($resultAgenda, MYSQLI_ASSOC);
 
 // berita
-$resultBerita = mysqli_query($conn, "SELECT * FROM informasi ORDER BY tgl_post DESC, id_info DESC limit 3");
+$resultBerita = mysqli_query($conn, "SELECT * FROM informasi WHERE status='publish' ORDER BY tgl_post DESC, id_info DESC limit 3");
 $allBerita = mysqli_fetch_all($resultBerita, MYSQLI_ASSOC);
+
+// galeri
+$resultGaleri = mysqli_query($conn, "SELECT * FROM galeri ORDER BY created_at DESC limit 6");
+$allGaleri = mysqli_fetch_all($resultGaleri, MYSQLI_ASSOC);
 
 ?>
 
@@ -125,55 +129,23 @@ $allBerita = mysqli_fetch_all($resultBerita, MYSQLI_ASSOC);
                 </div>
             </div>
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="100">
-                        <div class="image-item">
-                            <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
-                                <img src="assets/images/news/news1.jpeg" class="img-shadow" width="100%" height="100%" alt="">
-                                <div class="overlay">Rapat Sosialisasi Penerapan Ganjil Genap</div>
-                            </a>
+                <div class="row justify-content-center">
+                    <?php if (mysqli_num_rows($resultGaleri) > 0) : ?>
+                        <?php foreach ($allGaleri as $galeri) : ?>
+                            <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="100">
+                                <div class="image-item">
+                                    <a href="images/<?= $galeri['image']; ?>" class="fancybox" data-fancybox="gallery1">
+                                        <img src="images/<?= $galeri['image']; ?>" class="img-shadow" width="100%" height="100%" alt="">
+                                        <div class="overlay"><?= $galeri['judul']; ?></div>
+                                    </a>
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
+                    <?php else : ?>
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <h6>Belum ada foto galeri</h6>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="200">
-                        <div class="image-item">
-                            <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
-                                <img src="assets/images/news/news1.jpeg" class="img-shadow" width="100%" height="100%" alt="">
-                                <div class="overlay">Rapat Sosialisasi Penerapan Ganjil Genap</div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="300">
-                        <div class="image-item">
-                            <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
-                                <img src="assets/images/news/news1.jpeg" class="img-shadow" width="100%" height="100%" alt="">
-                                <div class="overlay">Rapat Sosialisasi Penerapan Ganjil Genap</div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="400">
-                        <div class="image-item">
-                            <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
-                                <img src="assets/images/news/news1.jpeg" class="img-shadow" width="100%" height="100%" alt="">
-                                <div class="overlay">Rapat Sosialisasi Penerapan Ganjil Genap</div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="500">
-                        <div class="image-item">
-                            <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
-                                <img src="assets/images/news/news1.jpeg" class="img-shadow" width="100%" height="100%" alt="">
-                                <div class="overlay">Rapat Sosialisasi Penerapan Ganjil Genap</div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="600">
-                        <div class="image-item">
-                            <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
-                                <img src="assets/images/news/news1.jpeg" class="img-shadow" width="100%" height="100%" alt="">
-                                <div class="overlay">Rapat Sosialisasi Penerapan Ganjil Genap</div>
-                            </a>
-                        </div>
-                    </div>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>

@@ -11,9 +11,9 @@ $batas = 6;
 $halaman = isset($_GET['halaman']) ? (int) $_GET['halaman'] : 1;
 $halamanAwal = ($halaman > 1) ? ($halaman * $batas) - $batas : 0;
 
-$queryTotalberita = mysqli_query($conn, "SELECT * FROM informasi");
+$queryTotalberita = mysqli_query($conn, "SELECT * FROM informasi WHERE status='publish'");
 
-$resultBerita = mysqli_query($conn, "SELECT * FROM informasi ORDER BY tgl_post DESC, id_info DESC LIMIT $halamanAwal, $batas");
+$resultBerita = mysqli_query($conn, "SELECT * FROM informasi WHERE status='publish' ORDER BY tgl_post DESC, id_info DESC LIMIT $halamanAwal, $batas");
 $allBerita = mysqli_fetch_all($resultBerita, MYSQLI_ASSOC);
 
 $previous = $halaman - 1;
@@ -178,8 +178,6 @@ if ($halaman > $jumlahBerita) {
                     <a href="index.php?page=agenda" class="text-blue-900 font-weight-bold">Selengkapnya <i class="fas fa-angle-double-right"></i></a>
                 </div>
             </div>
-        </div>
-        </div>
         </div>
     </section>
 

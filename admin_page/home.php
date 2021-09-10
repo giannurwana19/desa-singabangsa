@@ -8,6 +8,8 @@
       switch($_GET['page']){
           case 'beranda'  : include 'beranda.php'; break;
 		  case 'informasi'  : include 'informasi.php'; break;
+		  case 'galeri'  : include 'galeri.php'; break;
+		  case 'tambah-galeri'  : include 'tambah_galeri.php'; break;
 		  case 'agenda'  : include 'agenda.php'; break;
 		  case 'saran'  : include 'saran.php'; break;
 		  case 'input_informasi'  : include 'input_informasi.php'; break;
@@ -34,5 +36,3 @@
   }
   //Include file footer.php
   include 'footer.php';
-
-?>

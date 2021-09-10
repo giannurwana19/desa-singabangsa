@@ -6,6 +6,25 @@ require '../koneksi/koneksi.php';
 $resultAgenda = mysqli_query($conn, "SELECT * FROM agenda ORDER BY tanggal DESC, id_agenda DESC LIMIT 3");
 $allAgenda = mysqli_fetch_all($resultAgenda, MYSQLI_ASSOC);
 
+// galeri
+$batas = 9;
+$halaman = isset($_GET['halaman']) ? (int) $_GET['halaman'] : 1;
+$halamanAwal = ($halaman > 1) ? ($halaman * $batas) - $batas : 0;
+
+$queryTotalGaleri = mysqli_query($conn, "SELECT * FROM galeri ORDER BY created_at DESC");
+
+$resultGaleri = mysqli_query($conn, "SELECT * FROM galeri ORDER BY created_at DESC LIMIT $halamanAwal, $batas");
+$allGaleri = mysqli_fetch_all($resultGaleri, MYSQLI_ASSOC);
+
+$previous = $halaman - 1;
+$next = $halaman + 1;
+
+$jumlahGaleri = mysqli_num_rows($queryTotalGaleri);
+$totalHalaman = ceil($jumlahGaleri / $batas);
+
+if ($halaman > $jumlahGaleri) {
+    header('Location: index.php?page=galeri&halaman=1');
+}
 
 ?>
 
@@ -72,80 +91,43 @@ $allAgenda = mysqli_fetch_all($resultAgenda, MYSQLI_ASSOC);
         <div class="container pt-5">
             <h4 class="text-center mb-4">GALERI</h4>
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="100">
-                        <div class="image-item">
-                            <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
-                                <img src="assets/images/news/news1.jpeg" class="img-shadow" width="100%" height="100%" alt="">
-                                <div class="overlay">Rapat Sosialisasi Penerapan Ganjil Genap</div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="200">
-                        <div class="image-item">
-                            <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
-                                <img src="assets/images/news/news1.jpeg" class="img-shadow" width="100%" height="100%" alt="">
-                                <div class="overlay">Rapat Sosialisasi Penerapan Ganjil Genap</div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="300">
-                        <div class="image-item">
-                            <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
-                                <img src="assets/images/news/news1.jpeg" class="img-shadow" width="100%" height="100%" alt="">
-                                <div class="overlay">Rapat Sosialisasi Penerapan Ganjil Genap</div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="400">
-                        <div class="image-item">
-                            <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
-                                <img src="assets/images/news/news1.jpeg" class="img-shadow" width="100%" height="100%" alt="">
-                                <div class="overlay">Rapat Sosialisasi Penerapan Ganjil Genap</div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="500">
-                        <div class="image-item">
-                            <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
-                                <img src="assets/images/news/news1.jpeg" class="img-shadow" width="100%" height="100%" alt="">
-                                <div class="overlay">Rapat Sosialisasi Penerapan Ganjil Genap</div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="600">
-                        <div class="image-item">
-                            <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
-                                <img src="assets/images/news/news1.jpeg" class="img-shadow" width="100%" height="100%" alt="">
-                                <div class="overlay">Rapat Sosialisasi Penerapan Ganjil Genap</div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="700">
-                        <div class="image-item">
-                            <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
-                                <img src="assets/images/news/news1.jpeg" class="img-shadow" width="100%" height="100%" alt="">
-                                <div class="overlay">Rapat Sosialisasi Penerapan Ganjil Genap</div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="800">
-                        <div class="image-item">
-                            <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
-                                <img src="assets/images/news/news1.jpeg" class="img-shadow" width="100%" height="100%" alt="">
-                                <div class="overlay">Rapat Sosialisasi Penerapan Ganjil Genap</div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="900">
-                        <div class="image-item">
-                            <a href="assets/images/news/news1.jpeg" class="fancybox" data-fancybox="gallery1">
-                                <img src="assets/images/news/news1.jpeg" class="img-shadow" width="100%" height="100%" alt="">
-                                <div class="overlay">Rapat Sosialisasi Penerapan Ganjil Genap</div>
-                            </a>
-                        </div>
-                    </div>
+                <div class="row mb-4 justify-content-center">
+                    <?php if (mysqli_num_rows($resultGaleri) > 0) : ?>
+                        <?php foreach ($allGaleri as $galeri) : ?>
+                            <div class="col-md-6 col-lg-4 mb-3" data-aos="flip-left" data-aos-delay="100">
+                                <div class="image-item">
+                                    <a href="images/<?= $galeri['image']; ?>" class="fancybox" data-fancybox="gallery1">
+                                        <img src="images/<?= $galeri['image']; ?>" class="img-shadow" width="100%" height="100%" alt="">
+                                        <div class="overlay"><?= $galeri['judul']; ?></div>
+                                    </a>
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
                 </div>
+
+                <!-- pagination -->
+                <?php if ($jumlahGaleri > $batas) : ?>
+                    <nav>
+                        <ul class="pagination pagination-sm justify-content-center">
+                            <li class="page-item <?php if ($halaman == 1) : ?> disabled <?php endif ?>">
+                                <a class="page-link" <?php if ($halaman > 1) : ?> href="index.php?page=galeri&halaman=<?= $previous ?>" <?php endif; ?>>
+                                    Previous
+                                </a>
+                            </li>
+                            <?php for ($no = 1; $no <= $totalHalaman; $no++) : ?>
+                                <li class="page-item <?php if ($halaman == $no) : ?> active <?php endif; ?>">
+                                    <a class="page-link" href="index.php?page=galeri&halaman=<?= $no ?>"><?= $no; ?></a>
+                                </li>
+                            <?php endfor; ?>
+                            <li class="page-item <?php if ($halaman == $totalHalaman) : ?> disabled <?php endif ?>">
+                                <a class="page-link" <?php if ($halaman < $totalHalaman) : ?> href="index.php?page=galeri&halaman=<?= $next ?>" <?php endif; ?>>
+                                    Next
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                <?php endif; ?>
             </div>
         </div>
     </section>
