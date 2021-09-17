@@ -1,23 +1,31 @@
 <?php
-  include('../koneksi/koneksi.php');
-  session_start(); //Mendapatkan Session
 
-  
-  $admin=$_POST['admin'];
-  
-  date_default_timezone_set('Asia/Jakarta');
-  function tglIndonesia($str){
-        $tr   = trim($str);
-        $str    = str_replace(array('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'), array('Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum\'at', 'Sabtu', 'Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'), $tr);
-        return $str;
-    }
 
-  ob_start();
-  //Report
-  require ("../html2pdf/html2pdf.class.php");
-  $content = ob_get_clean();
+include('../koneksi/koneksi.php');
+session_start(); //Mendapatkan Session
 
-  $content.= "
+
+$admin = $_POST['admin'];
+
+date_default_timezone_set('Asia/Jakarta');
+function tglIndonesia($str)
+{
+  $tr   = trim($str);
+  $str    = str_replace(array('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'), array('Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum\'at', 'Sabtu', 'Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'), $tr);
+  return $str;
+}
+
+ob_start();
+//Report
+// require ("../html2pdf/html2pdf.class.php");
+
+require_once '../vendor/autoload.php';
+use Mpdf\MpdfException;
+
+
+// $content = ob_get_clean();
+
+$content = "
   <style>
   p.kop{
     margin-left:45px;
@@ -44,11 +52,11 @@
 		<th style='width: 120px;'>No.Telpon</th>
 		<th style='width: 120px;'>Jabatan</th>
       </tr>";
-      // Menampilkan data
-      $query = mysqli_query($conn,"SELECT * FROM jurnalis");
-      $no = 1; // nomor baris
-      while ($r = mysqli_fetch_array($query)) {
-      $content.="<tr bgcolor='#FFFFFF'>
+// Menampilkan data
+$query = mysqli_query($conn, "SELECT * FROM jurnalis");
+$no = 1; // nomor baris
+while ($r = mysqli_fetch_array($query)) {
+  $content .= "<tr bgcolor='#FFFFFF'>
         <td>$no</td>
         <td>$r[id_jurnalis]</td>
         <td style='text-transform:capitalize'>$r[nik_jurnalis]</td>
@@ -56,11 +64,11 @@
 		<td style='text-align:center'>$r[no_telp]</td>
 		<td style='text-align:center'>$r[jabatan]</td>
       </tr>";
-      $no++;
-      }
-	date_default_timezone_set('Asia/Jakarta');
-	$date = date('d/m/Y - H:i', time());
-    $content.="</table></p><br><br>
+  $no++;
+}
+date_default_timezone_set('Asia/Jakarta');
+$date = date('d/m/Y - H:i', time());
+$content .= "</table></p><br><br>
 	
 	<p align='left'>
 	<pre align='left'>
@@ -71,20 +79,23 @@
 	</pre>
 	
 	</p>";
-	
 
-  $filename="Laporan_Jurnalis ".date('d-m-y').".pdf"; //ubah untuk menentukan nama file pdf yang dihasilkan nantinya
 
-  ob_end_clean();
-  // conversion HTML => PDF
-  try
-  {
-    $html2pdf = new HTML2PDF('P', 'A4','en', false, 'ISO-8859-15');
-    $html2pdf->setDefaultFont('Arial');
-    $html2pdf->writeHTML($content, isset($_GET['vuehtml']));
-    $html2pdf->pdf->IncludeJS('print(TRUE)');
-    $html2pdf->Output($filename);
-  }
-  catch(HTML2PDF_exception $e) { echo $e; }
-?>
+// echo $content;
+// die;
 
+$filename = "Laporan_Jurnalis " . date('d-m-y') . ".pdf"; //ubah untuk menentukan nama file pdf yang dihasilkan nantinya
+
+// ob_end_clean();
+// conversion HTML => PDF
+try {
+  $html2pdf = new \Mpdf\Mpdf();
+  // $html2pdf->showImageErrors = true;
+  // $html2pdf = new HTML2PDF('P', 'A4', 'en', false, 'ISO-8859-15');
+  $html2pdf->setDefaultFont('Arial');
+  $html2pdf->writeHTML($content);
+  // $html2pdf->pdf->IncludeJS('print(TRUE)');
+  $html2pdf->Output($filename, 'D');
+} catch (MpdfException $e) {
+  echo $e;
+}

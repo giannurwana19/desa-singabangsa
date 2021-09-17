@@ -1,22 +1,27 @@
 <?php
-  session_start(); //Mendapatkan Session
-  include('../koneksi/koneksi.php');
-  $tahun = $_POST['tahun'];
-  $admin =$_POST['admin'];
+require_once '../vendor/autoload.php';
 
-  date_default_timezone_set('Asia/Jakarta');
-  function tglIndonesia($str){
-        $tr   = trim($str);
-        $str    = str_replace(array('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'), array('Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum\'at', 'Sabtu', 'Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'), $tr);
-        return $str;
-    }
+use Mpdf\MpdfException;
 
-  ob_start();
-  //Report
-  require ("../html2pdf/html2pdf.class.php");
-  $content = ob_get_clean();
+session_start(); //Mendapatkan Session
+include('../koneksi/koneksi.php');
+$tahun = $_POST['tahun'];
+$admin = $_POST['admin'];
 
-  $content.= "
+date_default_timezone_set('Asia/Jakarta');
+function tglIndonesia($str)
+{
+  $tr   = trim($str);
+  $str    = str_replace(array('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'), array('Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum\'at', 'Sabtu', 'Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'), $tr);
+  return $str;
+}
+
+ob_start();
+//Report
+// require ("../html2pdf/html2pdf.class.php");
+$content = ob_get_clean();
+
+$content .= "
   <style>
   p.kop{
     margin-left:45px;
@@ -44,8 +49,8 @@
 		<th style='width: 120px;'>Jurnalis</th>
 		<th style='width: 100px;'>Dipublish Oleh</th>
       </tr>";
-      // Menampilkan data
-      $query = mysqli_query($conn,"SELECT
+// Menampilkan data
+$query = mysqli_query($conn, "SELECT
   `informasi`.`id_info`,
   `informasi`.`id_kategori`,
   `informasi`.`judul`,
@@ -65,9 +70,9 @@ FROM
   INNER JOIN `jurnalis` ON `jurnalis`.`id_jurnalis` = `informasi`.`id_jurnalis`
   INNER JOIN `pegawai` ON `pegawai`.`id_pegawai` = `informasi`.`id_pegawai`
   WHERE status='publish' AND YEAR(tgl_post)='$tahun' ");
-      $no = 1; // nomor baris
-      while ($r = mysqli_fetch_array($query)) {
-      $content.="<tr bgcolor='#FFFFFF'>
+$no = 1; // nomor baris
+while ($r = mysqli_fetch_array($query)) {
+  $content .= "<tr bgcolor='#FFFFFF'>
         <td>$no</td>
         <td>$r[id_info]</td>
         <td style='text-align:center'>$r[nm_kategori]</td>
@@ -75,11 +80,11 @@ FROM
 		<td style='text-align:center'>$r[nm_jurnalis]</td>
 		<td style='text-align:center'>$r[nm_pegawai]</td>
       </tr>";
-      $no++;
-      }
-	date_default_timezone_set('Asia/Jakarta');
-	$date = date('d/m/Y - H:i', time());
-    $content.="</table></p><br><br>
+  $no++;
+}
+date_default_timezone_set('Asia/Jakarta');
+$date = date('d/m/Y - H:i', time());
+$content .= "</table></p><br><br>
 	
 	<p align='left'>
 	<pre align='left'>
@@ -92,21 +97,20 @@ FROM
 	</pre>
 	
 	</p>";
-	
-	
 
-  $filename="LaporanBerita(pertahun)".date('d-m-y').".pdf"; //ubah untuk menentukan nama file pdf yang dihasilkan nantinya
 
-  ob_end_clean();
-  // conversion HTML => PDF
-  try
-  {
-    $html2pdf = new HTML2PDF('P', 'A4','en', false, 'ISO-8859-15');
-    $html2pdf->setDefaultFont('Arial');
-    $html2pdf->writeHTML($content, isset($_GET['vuehtml']));
-    $html2pdf->pdf->IncludeJS('print(TRUE)');
-    $html2pdf->Output($filename);
-  }
-  catch(HTML2PDF_exception $e) { echo $e; }
-?>
 
+$filename = "LaporanBerita(pertahun)" . date('d-m-y') . ".pdf"; //ubah untuk menentukan nama file pdf yang dihasilkan nantinya
+
+ob_end_clean();
+// conversion HTML => PDF
+try {
+  $html2pdf = new \Mpdf\Mpdf();
+  // $html2pdf = new HTML2PDF('P', 'A4', 'en', false, 'ISO-8859-15');
+  $html2pdf->setDefaultFont('Arial');
+  $html2pdf->writeHTML($content);
+  // $html2pdf->pdf->IncludeJS('print(TRUE)');
+  $html2pdf->Output($filename, 'D');
+} catch (MpdfException $e) {
+  echo $e;
+}
