@@ -2,10 +2,18 @@
 
 require '../koneksi/koneksi.php';
 
+$id = $_GET['id'];
+
 $resultAgenda = mysqli_query($conn, "SELECT * FROM agenda ORDER BY tanggal DESC, id_agenda DESC LIMIT 3");
 $allAgenda = mysqli_fetch_all($resultAgenda, MYSQLI_ASSOC);
 
-$id = $_GET['id'];
+
+$resultKomentar = mysqli_query($conn, "SELECT * FROM komentar WHERE id_info = '$id' ORDER BY id_komentar DESC");
+$allKomentar = mysqli_fetch_all($resultKomentar, MYSQLI_ASSOC);
+
+// var_dump($allKomentar);
+// die;
+
 
 if ($id) {
     $result = mysqli_query($conn, "SELECT * FROM informasi WHERE id_info='$id'");
@@ -131,6 +139,79 @@ if ($id) {
                     </div>
                     <a href="index.php?page=agenda" class="text-blue-900 font-weight-bold">Selengkapnya <i class="fas fa-angle-double-right"></i></a>
                 </div>
+
+                <div class="col-lg-8 mb-4">
+                    <div class="card my-4">
+                        <h5 class="card-header">Komentar:</h5>
+                        <div class="card-body">
+
+                            <form role="form" method="POST" action="pages/prs_komentar.php">
+
+                                <div class="control-group form-group">
+                                    <div class="controls">
+                                        <strong>Nama&nbsp;:</strong>
+                                        <input type="text" class="form-control" name="nm_warga" placeholder="Masukkan nama anda" required>
+                                        <p class="help-block"></p>
+                                    </div>
+                                </div>
+                                <div class="control-group form-group">
+                                    <div class="controls">
+                                        <input type="hidden" class="form-control" name="id_info" value="<?= $id ?>" required>
+                                        <p class="help-block"></p>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="tanggal" class="form-control" value="<?= date('d-m-Y H:i') ?>">
+
+                                <div class="control-group form-group">
+                                    <div class="controls">
+                                        <strong>Isi Komentar&nbsp;:</strong>
+                                        <textarea rows="3" cols="100" class="form-control" name="isi" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="control-group form-group">
+                                    <div class="controls">
+                                        <strong>E-Mail&nbsp;:</strong>
+                                        <input type="email" class="form-control" name="email" placeholder="example@gmail.com" required>
+                                        <p class="help-block"></p>
+                                    </div>
+                                </div>
+                                <div class="control-group form-group">
+                                    <div class="controls">
+                                        <input type="hidden" class="form-control" name="flag" value="0" required>
+                                    </div>
+                                </div>
+                                <div class="control-group form-group">
+                                    <div class="controls">
+                                        <input type="hidden" class="form-control" name="status" value="komen" required>
+                                    </div>
+
+                                </div>
+
+
+                                <div id="success"></div>
+                                <!-- For success/fail messages -->
+                                <button name="kirim_komen" type="submit" class="btn btn-sm btn-primary">Kirim</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="card my-4">
+                        <h5 class="card-header">Komentar:</h5>
+                        <div class="card-body">
+
+                            <?php if (mysqli_num_rows($resultKomentar) > 0) : ?>
+                                <?php foreach ($allKomentar as $komen) : ?>
+                                    <!-- Comment with nested comments -->
+                                    <div class="my-1"><strong><?= $komen['nm_warga']; ?>:</strong> <span><?= $komen['isi']; ?></span></div>
+                                <?php endforeach; ?>
+                            <?php else : ?>
+                                <div class="text-center"><strong>Belum ada komentar!</strong></div>
+                            <?php endif; ?>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
